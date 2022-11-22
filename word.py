@@ -1,17 +1,12 @@
-from tokenize import String
-
-
 class Word:
-    name = ""
-    noun = []
-    verb = []
-    adj = []
-    
-    def __init__(self, name, noun: list[String], verb: list[String], adj: list[String]):
-        self.name = name
-        self.noun = noun
-        self.verb = verb
-        self.adj = adj
-    
-    
-    
+    def __init__(s, input: dict) -> None:
+        s.name = input["word"]
+        s.data = dict()
+        for i in input["meanings"]:
+            s.data[i[0]] = i[1]
+
+    def __str__(s) -> str:
+        return s.name, s.data
+
+word1 = Word({'word': 'a', 'meanings': [['interj', 'ah! ha! oh! ooh! aw! (emotion word)']]})
+print(word1)
