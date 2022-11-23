@@ -1,13 +1,13 @@
 from cgi import test
 
 
-import Word
+from Word import Word
 
+testNoun = Word({"word": "akesi","meanings": [["n","non-cute animal, reptile, amphibian, dinosaur, monster"]]})
 
+print(testNoun)
 
-testd = {
-"test": "one",
-"test2" : "two"
-}
+print(testNoun.noun())
 
-print(testd["test2"])
+for i in range(3,3):
+    print(i)
