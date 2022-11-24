@@ -2,18 +2,21 @@ from tokenize import String
 import string
 import json
 from Word import Word
+punctuation = string.punctuation
 
 #create wordlist from jprogr's dataset
 dictionaryFile = open("toki_pona_dictionary.json")
 jsonin = json.load(dictionaryFile)
-wordList = dict()
+wordList = dict() #create wordlist from jprogr's dataset
+
 for i in jsonin:
-    print(i, type(i))
+    #print(i, type(i))
     tempword = Word(i)
-    wordList[tempword.name] = tempword.data
+    wordList[tempword.name] = tempword
 #print(wordList)
+#wordlist is a dict with the word name as key and the word object as value
  
-def nounPhrase(words: list[Word]) -> String:
+def nounPhrase(words: list[Word]) -> string:
     if len(words) == 0: 
         return ""
     output = ""
@@ -26,15 +29,34 @@ def nounPhrase(words: list[Word]) -> String:
         elif words[i].name == "anu":
             output = output + " " + words[i] + " " + nounPhrase()
             break
-        output = output + " " + i.adj()
+        output = output + " " + words[i].adj()
     return output
     
 #process adjective phrase, this only works if all words in the input are content words, ie. there are no preps or seps
-def adjPhrase(words: list[Word]) -> String:
+def adjPhrase(words: list[Word]) -> string:
     output = ""
     for i, match in enumerate(words):
         output = match.adj() + " " + output
+    return output
 
+#changes slightly processed input string to list of words. Ignores punctuation
+def stringToWords(input: string) -> list[Word]:
+    tpString = input
+    tpString = tpString.strip()
+    tpString = tpString.translate(str.maketrans('', '', punctuation))
+
+    print(tpString)
+    if(not tpString.isalpha()):
+        print("Not valid string")
+    tpWords = tpString.split(" ")
+    tpout = [None] * len(tpWords)
+    for index, string in enumerate(tpWords):
+        tpout[index] = wordList[string]
+    return tpout
+
+
+
+    
 
 #loop to allow continued string inputs
 while False:  #TODO loop changed to false for testing
@@ -42,19 +64,9 @@ while False:  #TODO loop changed to false for testing
     #tpString = str(tpString).lower()
     output = ""
     toneModifiers = "" #use this string to keep track of tone modifiers
-
     if tpString == "end":
         break
 
-    tpString = tpString.strip()
-    tpString = tpString.translate(str.maketrans('', '', string.punctuation))
-
-    if(not tpString.isalpha()):
-        print("Not valid string")
-    
-    tpWords = tpString.split(" ")
-
-    
     for modifier in [["a", "emphasis, "],["o", "command"]]:
         for w in tpWords:
             if w == modifier[0]:
