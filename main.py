@@ -15,7 +15,8 @@ for i in jsonin:
     wordList[tempword.name] = tempword
 #print(wordList)
 #wordlist is a dict with the word name as key and the word object as value
- 
+
+
 def nounPhrase(words: list[Word]) -> string:
     if len(words) == 0: 
         return ""

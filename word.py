@@ -20,19 +20,19 @@ class Word:
             return s.verb()
         else:
             #edge case catcher
-            return list(s.data.values)[0]    
+            return list(s.data.values)[0].split(",")[0] 
 
     def noun(s):
-        return s.data["n"]
+        return s.data["n"].split(",")[0]
     
     def adj(s):
-        return s.data["mod"]
+        return s.data["mod"].split(",")[0]
 
     def verb(s, transitive = False):
         if transitive:
-            return s.data["vt"]
+            return s.data["vt"].split(",")[0]
         else:
-            return s.data["vi"]
+            return s.data["vi"].split(",")[0]
     
     def isPrep(s):
         return "prep" in s.data or "sep" in s.data

@@ -8,7 +8,7 @@ import main
 print(testNoun)
 print(testNoun.noun())"""
 
-input = main.stringToWords("suli pona mute")
+input = main.stringToWords("mama sina")
 
 print(input)
 
