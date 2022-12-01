@@ -1,3 +1,6 @@
+#based on zach tomaszewski's paper and code
+#http://zach.tomaszewski.name/uh/ics661/source/
+
 from tokenize import String
 import string
 import json
@@ -10,14 +13,13 @@ jsonin = json.load(dictionaryFile)
 wordList = dict() #create wordlist from jprogr's dataset
 
 for i in jsonin:
-    #print(i, type(i))
     tempword = Word(i)
     wordList[tempword.name] = tempword
-#print(wordList)
 #wordlist is a dict with the word name as key and the word object as value
 
 
 def nounPhrase(words: list[Word]) -> string:
+    #catch empty strings
     if len(words) == 0: 
         return ""
     output = ""
