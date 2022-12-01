@@ -5,12 +5,15 @@ from tokenize import String
 import string
 import json
 from Word import Word
+import cky
 punctuation = string.punctuation
 
 #create wordlist from jprogr's dataset
 dictionaryFile = open("toki_pona_dictionary.json")
 jsonin = json.load(dictionaryFile)
 wordList = dict() #create wordlist from jprogr's dataset
+cky("TPCNFgrammar.txt")
+
 
 for i in jsonin:
     tempword = Word(i)
