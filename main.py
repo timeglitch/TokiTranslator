@@ -12,15 +12,33 @@ punctuation = string.punctuation
 dictionaryFile = open("toki_pona_dictionary.json")
 jsonin = json.load(dictionaryFile)
 wordList = dict() #create wordlist from jprogr's dataset
-cky("TPCNFgrammar.txt")
-
-
+grammar = cky.main("TPCNFgrammar.txt", False)
 for i in jsonin:
     tempword = Word(i)
     wordList[tempword.name] = tempword
+
+
 #wordlist is a dict with the word name as key and the word object as value
 
 
+
+parsedEx = cky.parse(grammar, "ni li seme")
+for item in parsedEx:
+    print(item)
+
+def recursiveText(parsed):
+    out = ""
+    for i in parsed:
+        if i is String:
+            if i in wordList:
+
+
+    
+        
+        
+
+
+# made irrelevant by tomaszewski's work
 def nounPhrase(words: list[Word]) -> string:
     #catch empty strings
     if len(words) == 0: 

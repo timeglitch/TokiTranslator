@@ -1,4 +1,5 @@
 #!python3
+import pprint as pp
 
 """
 This program use the CKY algorithm to parse entered sentences according to
@@ -35,27 +36,23 @@ NONTERM = '[A-Z]' #how to recognize a non-terminal with re.match
 TERM = '[^A-Z]'   #how to recognize a terminal with re.match
 DEBUG = False     #whether to print the state of the table at end of parse
 
-def main():
+def main(ruleFile, useConsole=True):
     """ 
     Handles command line arguments, then calls parse.
     """
-    try:
-        if len(sys.argv) == 1 or len(sys.argv) > 2:
-            print(__doc__)
-        else:
-            rules = loadRules(sys.argv[1])
-            grammar = Grammar(rules)
-            while True:
-                sentence = sys.stdin.readline()
-                if not sentence:
-                    break
-                elif sentence.startswith('#') or sentence == '\n':
-                    continue  #comment or blank line
-                else:
-                    print(parse(grammar, sentence)) #to stdout
 
-    except IOError as e:
-        print(e)
+    rules = loadRules(ruleFile)
+    grammar = Grammar(rules)
+    while useConsole:
+        sentence = sys.stdin.readline()
+        if not sentence:
+            break
+        elif sentence.startswith('#') or sentence == '\n':
+            continue  #comment or blank line
+        else:
+            pp.pprint(parse(grammar, sentence)) #to stdout
+    return grammar
+
 
 
 """
@@ -121,9 +118,16 @@ class Grammar:
                 key = (rule[2], rule[3])
                 into = self.nonterms
             else:
-                assert false                
+                assert False
             into[key] = into.get(key, []) + [rule[0]]
-                
+
+
+def removeDuplicates(list):
+    outlist = []
+    for item in list:
+        if item not in outlist:
+            outlist.append(item)
+    return outlist
 
 def parse(grammar, sentence):
     """
@@ -182,11 +186,11 @@ def parse(grammar, sentence):
 
     upperRight = table[0][len(tokens) - 1] 
     if 'S' in upperRight:
-        result = 'S: '
+        result = []
         for parse in upperRight['S']:
             for p in formatParse(parse):
-                result += '[S ' + p + '] / '
-        return result[:-2]  #chop off last '/ '
+                result.append(p)
+        return removeDuplicates(result)
     else:
         return 'not S'
 
@@ -209,12 +213,12 @@ def formatParse(parse):
         #produce a list of all possible returned subtree formats
         options = list()        
         for opt1 in formatParse(parse[1]):
-            pre = '[' + parse[0] + ' ' + opt1 + '] '
+            pre = parse[0],  opt1
             for opt2 in formatParse(parse[3]):
-                options.append(pre + '[' + parse[2] + ' ' + opt2 + ']')
+                options.append((pre  ,(parse[2], opt2)))
         return options
     else:
-        assert false, "Oops: shouldn't happen."
+        assert False, "Oops: shouldn't happen."
     
         
 if __name__ == '__main__':
