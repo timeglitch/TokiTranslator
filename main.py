@@ -22,9 +22,7 @@ for i in jsonin:
 
 
 
-parsedEx = cky.parse(grammar, "ni li seme")
-for item in parsedEx:
-    print(item)
+
 
 def recursiveText(parsed):
     out = ""
@@ -33,16 +31,23 @@ def recursiveText(parsed):
             if i in wordList:
                 pass
 
+    return out
+
     
 
 #loop to allow continued string inputs
-while False:  #TODO loop changed to false for testing
+while True:
     tpString = input("Enter a Toki Pona sentence: ")
-    #tpString = str(tpString).lower()
-    output = ""
-    #do work here
-    
-    print(output)
+    tpString = str(tpString).lower()
+    if (tpString == "exit"):
+        break
+    parsedEx = cky.parse(grammar, tpString)
+
+    parseTree = parsedEx[0]
+    print(type(parseTree))
+    print(parseTree)
+
+    break #temporarily break out automatically for testing
             
 
 
