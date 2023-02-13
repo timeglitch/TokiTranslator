@@ -24,20 +24,25 @@ for i in jsonin:
 
 
 
-def recursiveText(parsed):
+def simpleRecursiveText(parsed):
     out = ""
-    for i in parsed:
-        if i is String:
-            if i in wordList:
-                pass
+    #print(parsed)
+    #print(type(parsed))
+    if type(parsed) is tuple:
+        out = simpleRecursiveText(parsed[0]) + " " + simpleRecursiveText(parsed[1])
 
+        
+    if type(parsed) is str and parsed in wordList:
+        out = out + " " + str(wordList[parsed])
+        return out
     return out
+
 
     
 
 #loop to allow continued string inputs
 while True:
-    tpString = input("Enter a Toki Pona sentence: ")
+    tpString = "tenpo pini la mi wile kama pona" #input("Enter a Toki Pona sentence: ") TODO change this for testing
     tpString = str(tpString).lower()
     if (tpString == "exit"):
         break
@@ -48,8 +53,8 @@ while True:
 
     parseTree = parsedEx[0] #only take the first parse, we only need one but may want to show more later.
     print(parseTree)
-    out = recursiveText(parseTree)
-
+    out = simpleRecursiveText(parseTree)
+    print(out)
     break #temporarily break out automatically for testing
             
 
