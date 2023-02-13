@@ -41,11 +41,14 @@ while True:
     tpString = str(tpString).lower()
     if (tpString == "exit"):
         break
+
+    #parsedex is a a list of possible parses of the sentence.
+    #Sentences may have multiple grammatical breakdowns and parsedex may contain duplicates
     parsedEx = cky.parse(grammar, tpString)
 
-    parseTree = parsedEx[0]
-    print(type(parseTree))
+    parseTree = parsedEx[0] #only take the first parse, we only need one but may want to show more later.
     print(parseTree)
+    out = recursiveText(parseTree)
 
     break #temporarily break out automatically for testing
             
