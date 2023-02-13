@@ -1,0 +1,3907 @@
+VocativeS -> NP ZZ0001VocativeS
+ZZ0004VocativeS -> NP ZZ0002VocativeS
+ZZ0005VocativeS -> ZZ0004VocativeS ZZ0003VocativeS
+VocativeS -> ZZ0005VocativeS Sent
+ZZ0007VocativeS -> NP ZZ0006VocativeS
+VocativeS -> ZZ0007VocativeS Pred
+VocativeS -> ZZ0008VocativeS Pred
+ZZ0010VocativeS -> Conditional ZZ0009VocativeS
+VocativeS -> ZZ0010VocativeS Pred
+YNAnswer -> V ZZ0011YNAnswer
+Sent -> Conditional SubjPred
+Sent -> ZZ0012Sent SubjPred
+Conditional -> SubjPred ZZ0013Conditional
+Conditional -> Context ZZ0014Conditional
+Conditional -> NP ZZ0015Conditional
+SubjPred -> ZZ0016SubjPred Pred
+SubjPred -> ZZ0017SubjPred Pred
+ZZ0019SubjPred -> NP_NoMiSina ZZ0018SubjPred
+SubjPred -> ZZ0019SubjPred Pred
+ZZ0021SubjPred -> CompoundSubj ZZ0020SubjPred
+SubjPred -> ZZ0021SubjPred Pred
+ZZ0023CompoundSubj -> NP ZZ0022CompoundSubj
+CompoundSubj -> ZZ0023CompoundSubj CompoundSubj
+ZZ0025CompNP -> NP ZZ0024CompNP
+CompNP -> ZZ0025CompNP NP
+ZZ0027NPpi -> NP ZZ0026NPpi
+ZZ0028NPpi -> ZZ0027NPpi N
+NPpi -> ZZ0028NPpi Modifier
+ZZ0030NPpi -> NP ZZ0029NPpi
+NPpi -> ZZ0030NPpi Name
+NMod -> N Modifier
+NMod -> N N
+ZZ0031NMod -> N N
+NMod -> ZZ0031NMod Modifier
+Modifier -> Mod Modifier
+ZZ0033Pred -> VP ZZ0032Pred
+Pred -> ZZ0033Pred Pred
+VP -> VP PrepPh
+IntransVP -> ZZ0034IntransVP NP
+IntransVP -> ZZ0035IntransVP NP
+ZZ0037IntransVP -> Modal ZZ0036IntransVP
+IntransVP -> ZZ0037IntransVP NP
+ZZ0039IntransVP -> Modal ZZ0038IntransVP
+IntransVP -> ZZ0039IntransVP NP
+TransVP -> Verb DO
+ZZ0040TransVP -> Modal Verb
+TransVP -> ZZ0040TransVP DO
+DO -> ZZ0041DO NP
+ZZ0043DO -> ZZ0042DO NP
+DO -> ZZ0043DO DO
+Verb -> Modal V
+Verb -> V Mod
+Verb -> Modal YnV
+Verb -> YnV Mod
+ZZ0045YnV -> V ZZ0044YnV
+YnV -> ZZ0045YnV V
+PrepPh -> Prep NP
+ZZ0046PrepPh -> Prep NP
+PrepPh -> ZZ0046PrepPh PrepPh
+Context -> ante
+Context -> ken
+Modal -> PosModal ZZ0047Modal
+PosModal -> kama
+PosModal -> ken
+PosModal -> wile
+ZZ0051YnModal -> ZZ0048YnModal ZZ0049YnModal
+YnModal -> ZZ0051YnModal ZZ0050YnModal
+ZZ0055YnModal -> ZZ0052YnModal ZZ0053YnModal
+YnModal -> ZZ0055YnModal ZZ0054YnModal
+ZZ0059YnModal -> ZZ0056YnModal ZZ0057YnModal
+YnModal -> ZZ0059YnModal ZZ0058YnModal
+V -> anpa
+V -> ante
+V -> awen
+V -> ijo
+V -> ike
+V -> jaki
+V -> jan
+V -> jo
+V -> kalama
+V -> kama
+V -> ken
+V -> kepeken
+V -> kule
+V -> lape
+V -> lawa
+V -> lete
+V -> lili
+V -> lon
+V -> lukin
+V -> moku
+V -> moli
+V -> musi
+V -> mute
+V -> nasa
+V -> olin
+V -> open
+V -> pakala
+V -> pali
+V -> pana
+V -> pilin
+V -> pimeja
+V -> pini
+V -> poka
+V -> pona
+V -> seli
+V -> sin
+V -> sitelen
+V -> sona
+V -> suli
+V -> suwi
+V -> tawa
+V -> telo
+V -> toki
+V -> tomo
+V -> tu
+V -> unpa
+V -> utala
+V -> wan
+V -> wawa
+V -> weka
+V -> wile
+N -> mi
+N -> sina
+N_NoMiSina -> akesi
+N_NoMiSina -> ala
+N_NoMiSina -> ale
+N_NoMiSina -> ali
+N_NoMiSina -> ante
+N_NoMiSina -> ijo
+N_NoMiSina -> ike
+N_NoMiSina -> ilo
+N_NoMiSina -> insa
+N_NoMiSina -> jaki
+N_NoMiSina -> jan
+N_NoMiSina -> jo
+N_NoMiSina -> kala
+N_NoMiSina -> kalama
+N_NoMiSina -> kama
+N_NoMiSina -> kasi
+N_NoMiSina -> ken
+N_NoMiSina -> kili
+N_NoMiSina -> kiwen
+N_NoMiSina -> kule
+N_NoMiSina -> kute
+N_NoMiSina -> kulupu
+N_NoMiSina -> lawa
+N_NoMiSina -> len
+N_NoMiSina -> lete
+N_NoMiSina -> lili
+N_NoMiSina -> linja
+N_NoMiSina -> lipu
+N_NoMiSina -> luka
+N_NoMiSina -> lupa
+N_NoMiSina -> ma
+N_NoMiSina -> mama
+N_NoMiSina -> mani
+N_NoMiSina -> meli
+N_NoMiSina -> mije
+N_NoMiSina -> moku
+N_NoMiSina -> moli
+N_NoMiSina -> monsi
+N_NoMiSina -> mun
+N_NoMiSina -> musi
+N_NoMiSina -> mute
+N_NoMiSina -> nanpa
+N_NoMiSina -> nasin
+N_NoMiSina -> nena
+N_NoMiSina -> ni
+N_NoMiSina -> nimi
+N_NoMiSina -> noka
+N_NoMiSina -> oko
+N_NoMiSina -> olin
+N_NoMiSina -> ona
+N_NoMiSina -> pakala
+N_NoMiSina -> pali
+N_NoMiSina -> palisa
+N_NoMiSina -> pana
+N_NoMiSina -> pilin
+N_NoMiSina -> pimeja
+N_NoMiSina -> pini
+N_NoMiSina -> pipi
+N_NoMiSina -> poki
+N_NoMiSina -> poka
+N_NoMiSina -> pona
+N_NoMiSina -> seli
+N_NoMiSina -> selo
+N_NoMiSina -> seme
+N_NoMiSina -> sewi
+N_NoMiSina -> sijelo
+N_NoMiSina -> sike
+N_NoMiSina -> sinpin
+N_NoMiSina -> sitelen
+N_NoMiSina -> sona
+N_NoMiSina -> soweli
+N_NoMiSina -> suli
+N_NoMiSina -> suno
+N_NoMiSina -> supa
+N_NoMiSina -> suwi
+N_NoMiSina -> tan
+N_NoMiSina -> tawa
+N_NoMiSina -> telo
+N_NoMiSina -> tenpo
+N_NoMiSina -> toki
+N_NoMiSina -> tomo
+N_NoMiSina -> tu
+N_NoMiSina -> unpa
+N_NoMiSina -> uta
+N_NoMiSina -> utala
+N_NoMiSina -> walo
+N_NoMiSina -> wan
+N_NoMiSina -> waso
+N_NoMiSina -> wawa
+N_NoMiSina -> weka
+N_NoMiSina -> wile
+Mod -> ala
+Mod -> ale
+Mod -> ali
+Mod -> ante
+Mod -> awen
+Mod -> ijo
+Mod -> ike
+Mod -> insa
+Mod -> jaki
+Mod -> jan
+Mod -> jelo
+Mod -> kalama
+Mod -> kama
+Mod -> kin
+Mod -> kiwen
+Mod -> kule
+Mod -> kute
+Mod -> kulupu
+Mod -> laso
+Mod -> lape
+Mod -> lawa
+Mod -> lete
+Mod -> lili
+Mod -> loje
+Mod -> lukin
+Mod -> mama
+Mod -> meli
+Mod -> mi
+Mod -> mije
+Mod -> moku
+Mod -> moli
+Mod -> monsi
+Mod -> mun
+Mod -> musi
+Mod -> mute
+Mod -> nasa
+Mod -> ni
+Mod -> olin
+Mod -> ona
+Mod -> pakala
+Mod -> pali
+Mod -> pimeja
+Mod -> pini
+Mod -> poka
+Mod -> pona
+Mod -> sama
+Mod -> seli
+Mod -> seme
+Mod -> sewi
+Mod -> sike
+Mod -> sin
+Mod -> sina
+Mod -> suli
+Mod -> suwi
+Mod -> taso
+Mod -> tawa
+Mod -> telo
+Mod -> toki
+Mod -> tomo
+Mod -> tu
+Mod -> unpa
+Mod -> uta
+Mod -> walo
+Mod -> wan
+Mod -> wawa
+Mod -> weka
+Mod -> wike
+Prep -> kepeken
+Prep -> lon
+Prep -> poka
+Prep -> sama
+Prep -> tan
+Prep -> tawa
+Interjection -> a
+Interjection -> ZZ0060Interjection ZZ0061Interjection
+ZZ0065Interjection -> ZZ0062Interjection ZZ0063Interjection
+Interjection -> ZZ0065Interjection ZZ0064Interjection
+Interjection -> ala
+Interjection -> ike
+Interjection -> jaki
+Interjection -> mu
+Interjection -> o
+Interjection -> pakala
+Interjection -> pona
+Interjection -> toki
+Name -> ZZ0066Name ZZ0067Name
+Name -> ZZ0068Name ZZ0069Name
+ZZ0073Name -> ZZ0070Name ZZ0071Name
+Name -> ZZ0073Name ZZ0072Name
+Name -> ZZ0074Name ZZ0075Name
+Name -> ZZ0076Name ZZ0077Name
+S -> a
+S -> ZZ0078S ZZ0079S
+ZZ0083S -> ZZ0080S ZZ0081S
+S -> ZZ0083S ZZ0082S
+S -> ala
+S -> ike
+S -> jaki
+S -> mu
+S -> o
+S -> pakala
+S -> pona
+S -> toki
+S -> NP ZZ0084S
+ZZ0087S -> NP ZZ0085S
+ZZ0088S -> ZZ0087S ZZ0086S
+S -> ZZ0088S Sent
+ZZ0090S -> NP ZZ0089S
+S -> ZZ0090S Pred
+S -> ZZ0091S Pred
+ZZ0093S -> Conditional ZZ0092S
+S -> ZZ0093S Pred
+S -> Conditional SubjPred
+S -> ZZ0094S SubjPred
+S -> V ZZ0095S
+ZZ0001VocativeS -> o
+ZZ0002VocativeS -> o
+ZZ0003VocativeS -> ,
+ZZ0006VocativeS -> o
+ZZ0008VocativeS -> o
+ZZ0009VocativeS -> o
+YNAnswer -> anpa
+YNAnswer -> ante
+YNAnswer -> awen
+YNAnswer -> ijo
+YNAnswer -> ike
+YNAnswer -> jaki
+YNAnswer -> jan
+YNAnswer -> jo
+YNAnswer -> kalama
+YNAnswer -> kama
+YNAnswer -> ken
+YNAnswer -> kepeken
+YNAnswer -> kule
+YNAnswer -> lape
+YNAnswer -> lawa
+YNAnswer -> lete
+YNAnswer -> lili
+YNAnswer -> lon
+YNAnswer -> lukin
+YNAnswer -> moku
+YNAnswer -> moli
+YNAnswer -> musi
+YNAnswer -> mute
+YNAnswer -> nasa
+YNAnswer -> olin
+YNAnswer -> open
+YNAnswer -> pakala
+YNAnswer -> pali
+YNAnswer -> pana
+YNAnswer -> pilin
+YNAnswer -> pimeja
+YNAnswer -> pini
+YNAnswer -> poka
+YNAnswer -> pona
+YNAnswer -> seli
+YNAnswer -> sin
+YNAnswer -> sitelen
+YNAnswer -> sona
+YNAnswer -> suli
+YNAnswer -> suwi
+YNAnswer -> tawa
+YNAnswer -> telo
+YNAnswer -> toki
+YNAnswer -> tomo
+YNAnswer -> tu
+YNAnswer -> unpa
+YNAnswer -> utala
+YNAnswer -> wan
+YNAnswer -> wawa
+YNAnswer -> weka
+YNAnswer -> wile
+ZZ0011YNAnswer -> ala
+Sent -> ZZ0096Sent Pred
+Sent -> ZZ0097Sent Pred
+ZZ0099Sent -> NP_NoMiSina ZZ0098Sent
+Sent -> ZZ0099Sent Pred
+ZZ0101Sent -> CompoundSubj ZZ0100Sent
+Sent -> ZZ0101Sent Pred
+ZZ0012Sent -> taso
+ZZ0013Conditional -> la
+ZZ0014Conditional -> la
+ZZ0015Conditional -> la
+ZZ0016SubjPred -> mi
+ZZ0017SubjPred -> sina
+ZZ0018SubjPred -> li
+ZZ0020SubjPred -> li
+ZZ0022CompoundSubj -> en
+NP_NoMiSina -> akesi
+NP_NoMiSina -> ala
+NP_NoMiSina -> ale
+NP_NoMiSina -> ali
+NP_NoMiSina -> ante
+NP_NoMiSina -> ijo
+NP_NoMiSina -> ike
+NP_NoMiSina -> ilo
+NP_NoMiSina -> insa
+NP_NoMiSina -> jaki
+NP_NoMiSina -> jan
+NP_NoMiSina -> jo
+NP_NoMiSina -> kala
+NP_NoMiSina -> kalama
+NP_NoMiSina -> kama
+NP_NoMiSina -> kasi
+NP_NoMiSina -> ken
+NP_NoMiSina -> kili
+NP_NoMiSina -> kiwen
+NP_NoMiSina -> kule
+NP_NoMiSina -> kute
+NP_NoMiSina -> kulupu
+NP_NoMiSina -> lawa
+NP_NoMiSina -> len
+NP_NoMiSina -> lete
+NP_NoMiSina -> lili
+NP_NoMiSina -> linja
+NP_NoMiSina -> lipu
+NP_NoMiSina -> luka
+NP_NoMiSina -> lupa
+NP_NoMiSina -> ma
+NP_NoMiSina -> mama
+NP_NoMiSina -> mani
+NP_NoMiSina -> meli
+NP_NoMiSina -> mije
+NP_NoMiSina -> moku
+NP_NoMiSina -> moli
+NP_NoMiSina -> monsi
+NP_NoMiSina -> mun
+NP_NoMiSina -> musi
+NP_NoMiSina -> mute
+NP_NoMiSina -> nanpa
+NP_NoMiSina -> nasin
+NP_NoMiSina -> nena
+NP_NoMiSina -> ni
+NP_NoMiSina -> nimi
+NP_NoMiSina -> noka
+NP_NoMiSina -> oko
+NP_NoMiSina -> olin
+NP_NoMiSina -> ona
+NP_NoMiSina -> pakala
+NP_NoMiSina -> pali
+NP_NoMiSina -> palisa
+NP_NoMiSina -> pana
+NP_NoMiSina -> pilin
+NP_NoMiSina -> pimeja
+NP_NoMiSina -> pini
+NP_NoMiSina -> pipi
+NP_NoMiSina -> poki
+NP_NoMiSina -> poka
+NP_NoMiSina -> pona
+NP_NoMiSina -> seli
+NP_NoMiSina -> selo
+NP_NoMiSina -> seme
+NP_NoMiSina -> sewi
+NP_NoMiSina -> sijelo
+NP_NoMiSina -> sike
+NP_NoMiSina -> sinpin
+NP_NoMiSina -> sitelen
+NP_NoMiSina -> sona
+NP_NoMiSina -> soweli
+NP_NoMiSina -> suli
+NP_NoMiSina -> suno
+NP_NoMiSina -> supa
+NP_NoMiSina -> suwi
+NP_NoMiSina -> tan
+NP_NoMiSina -> tawa
+NP_NoMiSina -> telo
+NP_NoMiSina -> tenpo
+NP_NoMiSina -> toki
+NP_NoMiSina -> tomo
+NP_NoMiSina -> tu
+NP_NoMiSina -> unpa
+NP_NoMiSina -> uta
+NP_NoMiSina -> utala
+NP_NoMiSina -> walo
+NP_NoMiSina -> wan
+NP_NoMiSina -> waso
+NP_NoMiSina -> wawa
+NP_NoMiSina -> weka
+NP_NoMiSina -> wile
+ZZ0103NP_NoMiSina -> NP ZZ0102NP_NoMiSina
+NP_NoMiSina -> ZZ0103NP_NoMiSina NP
+NP -> mi
+NP -> sina
+ZZ0105NP -> NP ZZ0104NP
+NP -> ZZ0105NP NP
+CompNP -> N Modifier
+CompNP -> N N
+ZZ0106CompNP -> N N
+CompNP -> ZZ0106CompNP Modifier
+ZZ0108CompNP -> NP ZZ0107CompNP
+ZZ0109CompNP -> ZZ0108CompNP N
+CompNP -> ZZ0109CompNP Modifier
+ZZ0111CompNP -> NP ZZ0110CompNP
+CompNP -> ZZ0111CompNP Name
+ZZ0024CompNP -> anu
+ZZ0026NPpi -> pi
+ZZ0029NPpi -> pi
+Modifier -> ala
+Modifier -> ale
+Modifier -> ali
+Modifier -> ante
+Modifier -> awen
+Modifier -> ijo
+Modifier -> ike
+Modifier -> insa
+Modifier -> jaki
+Modifier -> jan
+Modifier -> jelo
+Modifier -> kalama
+Modifier -> kama
+Modifier -> kin
+Modifier -> kiwen
+Modifier -> kule
+Modifier -> kute
+Modifier -> kulupu
+Modifier -> laso
+Modifier -> lape
+Modifier -> lawa
+Modifier -> lete
+Modifier -> lili
+Modifier -> loje
+Modifier -> lukin
+Modifier -> mama
+Modifier -> meli
+Modifier -> mi
+Modifier -> mije
+Modifier -> moku
+Modifier -> moli
+Modifier -> monsi
+Modifier -> mun
+Modifier -> musi
+Modifier -> mute
+Modifier -> nasa
+Modifier -> ni
+Modifier -> olin
+Modifier -> ona
+Modifier -> pakala
+Modifier -> pali
+Modifier -> pimeja
+Modifier -> pini
+Modifier -> poka
+Modifier -> pona
+Modifier -> sama
+Modifier -> seli
+Modifier -> seme
+Modifier -> sewi
+Modifier -> sike
+Modifier -> sin
+Modifier -> sina
+Modifier -> suli
+Modifier -> suwi
+Modifier -> taso
+Modifier -> tawa
+Modifier -> telo
+Modifier -> toki
+Modifier -> tomo
+Modifier -> tu
+Modifier -> unpa
+Modifier -> uta
+Modifier -> walo
+Modifier -> wan
+Modifier -> wawa
+Modifier -> weka
+Modifier -> wike
+Pred -> VP PrepPh
+ZZ0032Pred -> li
+VP -> ZZ0112VP NP
+VP -> ZZ0113VP NP
+ZZ0115VP -> Modal ZZ0114VP
+VP -> ZZ0115VP NP
+ZZ0117VP -> Modal ZZ0116VP
+VP -> ZZ0117VP NP
+VP -> Verb DO
+ZZ0118VP -> Modal Verb
+VP -> ZZ0118VP DO
+IntransVP -> Modal V
+IntransVP -> V Mod
+IntransVP -> Modal YnV
+IntransVP -> YnV Mod
+ZZ0034IntransVP -> lon
+ZZ0035IntransVP -> tawa
+ZZ0036IntransVP -> lon
+ZZ0038IntransVP -> tawa
+IntransVP -> Mod Modifier
+IntransVP -> ala
+IntransVP -> ale
+IntransVP -> ali
+IntransVP -> ante
+IntransVP -> awen
+IntransVP -> ijo
+IntransVP -> ike
+IntransVP -> insa
+IntransVP -> jaki
+IntransVP -> jan
+IntransVP -> jelo
+IntransVP -> kalama
+IntransVP -> kama
+IntransVP -> kin
+IntransVP -> kiwen
+IntransVP -> kule
+IntransVP -> kute
+IntransVP -> kulupu
+IntransVP -> laso
+IntransVP -> lape
+IntransVP -> lawa
+IntransVP -> lete
+IntransVP -> lili
+IntransVP -> loje
+IntransVP -> lukin
+IntransVP -> mama
+IntransVP -> meli
+IntransVP -> mi
+IntransVP -> mije
+IntransVP -> moku
+IntransVP -> moli
+IntransVP -> monsi
+IntransVP -> mun
+IntransVP -> musi
+IntransVP -> mute
+IntransVP -> nasa
+IntransVP -> ni
+IntransVP -> olin
+IntransVP -> ona
+IntransVP -> pakala
+IntransVP -> pali
+IntransVP -> pimeja
+IntransVP -> pini
+IntransVP -> poka
+IntransVP -> pona
+IntransVP -> sama
+IntransVP -> seli
+IntransVP -> seme
+IntransVP -> sewi
+IntransVP -> sike
+IntransVP -> sin
+IntransVP -> sina
+IntransVP -> suli
+IntransVP -> suwi
+IntransVP -> taso
+IntransVP -> tawa
+IntransVP -> telo
+IntransVP -> toki
+IntransVP -> tomo
+IntransVP -> tu
+IntransVP -> unpa
+IntransVP -> uta
+IntransVP -> walo
+IntransVP -> wan
+IntransVP -> wawa
+IntransVP -> weka
+IntransVP -> wike
+IntransVP -> mi
+IntransVP -> sina
+ZZ0120IntransVP -> NP ZZ0119IntransVP
+IntransVP -> ZZ0120IntransVP NP
+ZZ0041DO -> e
+ZZ0042DO -> e
+Verb -> anpa
+Verb -> ante
+Verb -> awen
+Verb -> ijo
+Verb -> ike
+Verb -> jaki
+Verb -> jan
+Verb -> jo
+Verb -> kalama
+Verb -> kama
+Verb -> ken
+Verb -> kepeken
+Verb -> kule
+Verb -> lape
+Verb -> lawa
+Verb -> lete
+Verb -> lili
+Verb -> lon
+Verb -> lukin
+Verb -> moku
+Verb -> moli
+Verb -> musi
+Verb -> mute
+Verb -> nasa
+Verb -> olin
+Verb -> open
+Verb -> pakala
+Verb -> pali
+Verb -> pana
+Verb -> pilin
+Verb -> pimeja
+Verb -> pini
+Verb -> poka
+Verb -> pona
+Verb -> seli
+Verb -> sin
+Verb -> sitelen
+Verb -> sona
+Verb -> suli
+Verb -> suwi
+Verb -> tawa
+Verb -> telo
+Verb -> toki
+Verb -> tomo
+Verb -> tu
+Verb -> unpa
+Verb -> utala
+Verb -> wan
+Verb -> wawa
+Verb -> weka
+Verb -> wile
+ZZ0122Verb -> V ZZ0121Verb
+Verb -> ZZ0122Verb V
+ZZ0044YnV -> ala
+Modal -> kama
+Modal -> ken
+Modal -> wile
+ZZ0047Modal -> ala
+ZZ0126Modal -> ZZ0123Modal ZZ0124Modal
+Modal -> ZZ0126Modal ZZ0125Modal
+ZZ0130Modal -> ZZ0127Modal ZZ0128Modal
+Modal -> ZZ0130Modal ZZ0129Modal
+ZZ0134Modal -> ZZ0131Modal ZZ0132Modal
+Modal -> ZZ0134Modal ZZ0133Modal
+ZZ0048YnModal -> kama
+ZZ0049YnModal -> ala
+ZZ0050YnModal -> kama
+ZZ0052YnModal -> ken
+ZZ0053YnModal -> ala
+ZZ0054YnModal -> ken
+ZZ0056YnModal -> wile
+ZZ0057YnModal -> ala
+ZZ0058YnModal -> wile
+N -> akesi
+N -> ala
+N -> ale
+N -> ali
+N -> ante
+N -> ijo
+N -> ike
+N -> ilo
+N -> insa
+N -> jaki
+N -> jan
+N -> jo
+N -> kala
+N -> kalama
+N -> kama
+N -> kasi
+N -> ken
+N -> kili
+N -> kiwen
+N -> kule
+N -> kute
+N -> kulupu
+N -> lawa
+N -> len
+N -> lete
+N -> lili
+N -> linja
+N -> lipu
+N -> luka
+N -> lupa
+N -> ma
+N -> mama
+N -> mani
+N -> meli
+N -> mije
+N -> moku
+N -> moli
+N -> monsi
+N -> mun
+N -> musi
+N -> mute
+N -> nanpa
+N -> nasin
+N -> nena
+N -> ni
+N -> nimi
+N -> noka
+N -> oko
+N -> olin
+N -> ona
+N -> pakala
+N -> pali
+N -> palisa
+N -> pana
+N -> pilin
+N -> pimeja
+N -> pini
+N -> pipi
+N -> poki
+N -> poka
+N -> pona
+N -> seli
+N -> selo
+N -> seme
+N -> sewi
+N -> sijelo
+N -> sike
+N -> sinpin
+N -> sitelen
+N -> sona
+N -> soweli
+N -> suli
+N -> suno
+N -> supa
+N -> suwi
+N -> tan
+N -> tawa
+N -> telo
+N -> tenpo
+N -> toki
+N -> tomo
+N -> tu
+N -> unpa
+N -> uta
+N -> utala
+N -> walo
+N -> wan
+N -> waso
+N -> wawa
+N -> weka
+N -> wile
+N_NoMiSina -> ZZ0135N_NoMiSina ZZ0136N_NoMiSina
+N_NoMiSina -> ZZ0137N_NoMiSina ZZ0138N_NoMiSina
+ZZ0142N_NoMiSina -> ZZ0139N_NoMiSina ZZ0140N_NoMiSina
+N_NoMiSina -> ZZ0142N_NoMiSina ZZ0141N_NoMiSina
+N_NoMiSina -> ZZ0143N_NoMiSina ZZ0144N_NoMiSina
+N_NoMiSina -> ZZ0145N_NoMiSina ZZ0146N_NoMiSina
+ZZ0060Interjection -> a
+ZZ0061Interjection -> a
+ZZ0062Interjection -> a
+ZZ0063Interjection -> a
+ZZ0064Interjection -> a
+ZZ0066Name -> jan
+ZZ0067Name -> 'Name'
+ZZ0068Name -> ma
+ZZ0069Name -> 'Name'
+ZZ0070Name -> ma
+ZZ0071Name -> tomo
+ZZ0072Name -> 'Name'
+ZZ0074Name -> toki
+ZZ0075Name -> 'Name'
+ZZ0076Name -> soweli
+ZZ0077Name -> 'Name'
+ZZ0078S -> a
+ZZ0079S -> a
+ZZ0080S -> a
+ZZ0081S -> a
+ZZ0082S -> a
+ZZ0084S -> o
+ZZ0085S -> o
+ZZ0086S -> ,
+ZZ0089S -> o
+ZZ0091S -> o
+ZZ0092S -> o
+S -> ZZ0147S Pred
+S -> ZZ0148S Pred
+ZZ0150S -> NP_NoMiSina ZZ0149S
+S -> ZZ0150S Pred
+ZZ0152S -> CompoundSubj ZZ0151S
+S -> ZZ0152S Pred
+ZZ0094S -> taso
+S -> anpa
+S -> ante
+S -> awen
+S -> ijo
+S -> ike
+S -> jaki
+S -> jan
+S -> jo
+S -> kalama
+S -> kama
+S -> ken
+S -> kepeken
+S -> kule
+S -> lape
+S -> lawa
+S -> lete
+S -> lili
+S -> lon
+S -> lukin
+S -> moku
+S -> moli
+S -> musi
+S -> mute
+S -> nasa
+S -> olin
+S -> open
+S -> pakala
+S -> pali
+S -> pana
+S -> pilin
+S -> pimeja
+S -> pini
+S -> poka
+S -> pona
+S -> seli
+S -> sin
+S -> sitelen
+S -> sona
+S -> suli
+S -> suwi
+S -> tawa
+S -> telo
+S -> toki
+S -> tomo
+S -> tu
+S -> unpa
+S -> utala
+S -> wan
+S -> wawa
+S -> weka
+S -> wile
+ZZ0095S -> ala
+ZZ0096Sent -> mi
+ZZ0097Sent -> sina
+ZZ0098Sent -> li
+ZZ0100Sent -> li
+NP_NoMiSina -> ZZ0153NP_NoMiSina ZZ0154NP_NoMiSina
+NP_NoMiSina -> ZZ0155NP_NoMiSina ZZ0156NP_NoMiSina
+ZZ0160NP_NoMiSina -> ZZ0157NP_NoMiSina ZZ0158NP_NoMiSina
+NP_NoMiSina -> ZZ0160NP_NoMiSina ZZ0159NP_NoMiSina
+NP_NoMiSina -> ZZ0161NP_NoMiSina ZZ0162NP_NoMiSina
+NP_NoMiSina -> ZZ0163NP_NoMiSina ZZ0164NP_NoMiSina
+NP_NoMiSina -> N Modifier
+NP_NoMiSina -> N N
+ZZ0165NP_NoMiSina -> N N
+NP_NoMiSina -> ZZ0165NP_NoMiSina Modifier
+ZZ0167NP_NoMiSina -> NP ZZ0166NP_NoMiSina
+ZZ0168NP_NoMiSina -> ZZ0167NP_NoMiSina N
+NP_NoMiSina -> ZZ0168NP_NoMiSina Modifier
+ZZ0170NP_NoMiSina -> NP ZZ0169NP_NoMiSina
+NP_NoMiSina -> ZZ0170NP_NoMiSina Name
+ZZ0102NP_NoMiSina -> anu
+NP -> akesi
+NP -> ala
+NP -> ale
+NP -> ali
+NP -> ante
+NP -> ijo
+NP -> ike
+NP -> ilo
+NP -> insa
+NP -> jaki
+NP -> jan
+NP -> jo
+NP -> kala
+NP -> kalama
+NP -> kama
+NP -> kasi
+NP -> ken
+NP -> kili
+NP -> kiwen
+NP -> kule
+NP -> kute
+NP -> kulupu
+NP -> lawa
+NP -> len
+NP -> lete
+NP -> lili
+NP -> linja
+NP -> lipu
+NP -> luka
+NP -> lupa
+NP -> ma
+NP -> mama
+NP -> mani
+NP -> meli
+NP -> mije
+NP -> moku
+NP -> moli
+NP -> monsi
+NP -> mun
+NP -> musi
+NP -> mute
+NP -> nanpa
+NP -> nasin
+NP -> nena
+NP -> ni
+NP -> nimi
+NP -> noka
+NP -> oko
+NP -> olin
+NP -> ona
+NP -> pakala
+NP -> pali
+NP -> palisa
+NP -> pana
+NP -> pilin
+NP -> pimeja
+NP -> pini
+NP -> pipi
+NP -> poki
+NP -> poka
+NP -> pona
+NP -> seli
+NP -> selo
+NP -> seme
+NP -> sewi
+NP -> sijelo
+NP -> sike
+NP -> sinpin
+NP -> sitelen
+NP -> sona
+NP -> soweli
+NP -> suli
+NP -> suno
+NP -> supa
+NP -> suwi
+NP -> tan
+NP -> tawa
+NP -> telo
+NP -> tenpo
+NP -> toki
+NP -> tomo
+NP -> tu
+NP -> unpa
+NP -> uta
+NP -> utala
+NP -> walo
+NP -> wan
+NP -> waso
+NP -> wawa
+NP -> weka
+NP -> wile
+NP -> ZZ0171NP ZZ0172NP
+NP -> ZZ0173NP ZZ0174NP
+ZZ0178NP -> ZZ0175NP ZZ0176NP
+NP -> ZZ0178NP ZZ0177NP
+NP -> ZZ0179NP ZZ0180NP
+NP -> ZZ0181NP ZZ0182NP
+NP -> N Modifier
+NP -> N N
+ZZ0183NP -> N N
+NP -> ZZ0183NP Modifier
+ZZ0185NP -> NP ZZ0184NP
+ZZ0186NP -> ZZ0185NP N
+NP -> ZZ0186NP Modifier
+ZZ0188NP -> NP ZZ0187NP
+NP -> ZZ0188NP Name
+ZZ0104NP -> anu
+ZZ0107CompNP -> pi
+ZZ0110CompNP -> pi
+Pred -> ZZ0189Pred NP
+Pred -> ZZ0190Pred NP
+ZZ0192Pred -> Modal ZZ0191Pred
+Pred -> ZZ0192Pred NP
+ZZ0194Pred -> Modal ZZ0193Pred
+Pred -> ZZ0194Pred NP
+Pred -> Modal V
+Pred -> V Mod
+Pred -> Modal YnV
+Pred -> YnV Mod
+Pred -> Mod Modifier
+Pred -> ala
+Pred -> ale
+Pred -> ali
+Pred -> ante
+Pred -> awen
+Pred -> ijo
+Pred -> ike
+Pred -> insa
+Pred -> jaki
+Pred -> jan
+Pred -> jelo
+Pred -> kalama
+Pred -> kama
+Pred -> kin
+Pred -> kiwen
+Pred -> kule
+Pred -> kute
+Pred -> kulupu
+Pred -> laso
+Pred -> lape
+Pred -> lawa
+Pred -> lete
+Pred -> lili
+Pred -> loje
+Pred -> lukin
+Pred -> mama
+Pred -> meli
+Pred -> mi
+Pred -> mije
+Pred -> moku
+Pred -> moli
+Pred -> monsi
+Pred -> mun
+Pred -> musi
+Pred -> mute
+Pred -> nasa
+Pred -> ni
+Pred -> olin
+Pred -> ona
+Pred -> pakala
+Pred -> pali
+Pred -> pimeja
+Pred -> pini
+Pred -> poka
+Pred -> pona
+Pred -> sama
+Pred -> seli
+Pred -> seme
+Pred -> sewi
+Pred -> sike
+Pred -> sin
+Pred -> sina
+Pred -> suli
+Pred -> suwi
+Pred -> taso
+Pred -> tawa
+Pred -> telo
+Pred -> toki
+Pred -> tomo
+Pred -> tu
+Pred -> unpa
+Pred -> uta
+Pred -> walo
+Pred -> wan
+Pred -> wawa
+Pred -> weka
+Pred -> wike
+Pred -> mi
+Pred -> sina
+ZZ0196Pred -> NP ZZ0195Pred
+Pred -> ZZ0196Pred NP
+Pred -> Verb DO
+ZZ0197Pred -> Modal Verb
+Pred -> ZZ0197Pred DO
+VP -> Modal V
+VP -> V Mod
+VP -> Modal YnV
+VP -> YnV Mod
+VP -> anpa
+VP -> ante
+VP -> awen
+VP -> ijo
+VP -> ike
+VP -> jaki
+VP -> jan
+VP -> jo
+VP -> kalama
+VP -> kama
+VP -> ken
+VP -> kepeken
+VP -> kule
+VP -> lape
+VP -> lawa
+VP -> lete
+VP -> lili
+VP -> lon
+VP -> lukin
+VP -> moku
+VP -> moli
+VP -> musi
+VP -> mute
+VP -> nasa
+VP -> olin
+VP -> open
+VP -> pakala
+VP -> pali
+VP -> pana
+VP -> pilin
+VP -> pimeja
+VP -> pini
+VP -> poka
+VP -> pona
+VP -> seli
+VP -> sin
+VP -> sitelen
+VP -> sona
+VP -> suli
+VP -> suwi
+VP -> tawa
+VP -> telo
+VP -> toki
+VP -> tomo
+VP -> tu
+VP -> unpa
+VP -> utala
+VP -> wan
+VP -> wawa
+VP -> weka
+VP -> wile
+ZZ0199VP -> V ZZ0198VP
+VP -> ZZ0199VP V
+ZZ0112VP -> lon
+ZZ0113VP -> tawa
+ZZ0114VP -> lon
+ZZ0116VP -> tawa
+VP -> Mod Modifier
+VP -> ala
+VP -> ale
+VP -> ali
+VP -> ante
+VP -> awen
+VP -> ijo
+VP -> ike
+VP -> insa
+VP -> jaki
+VP -> jan
+VP -> jelo
+VP -> kalama
+VP -> kama
+VP -> kin
+VP -> kiwen
+VP -> kule
+VP -> kute
+VP -> kulupu
+VP -> laso
+VP -> lape
+VP -> lawa
+VP -> lete
+VP -> lili
+VP -> loje
+VP -> lukin
+VP -> mama
+VP -> meli
+VP -> mi
+VP -> mije
+VP -> moku
+VP -> moli
+VP -> monsi
+VP -> mun
+VP -> musi
+VP -> mute
+VP -> nasa
+VP -> ni
+VP -> olin
+VP -> ona
+VP -> pakala
+VP -> pali
+VP -> pimeja
+VP -> pini
+VP -> poka
+VP -> pona
+VP -> sama
+VP -> seli
+VP -> seme
+VP -> sewi
+VP -> sike
+VP -> sin
+VP -> sina
+VP -> suli
+VP -> suwi
+VP -> taso
+VP -> tawa
+VP -> telo
+VP -> toki
+VP -> tomo
+VP -> tu
+VP -> unpa
+VP -> uta
+VP -> walo
+VP -> wan
+VP -> wawa
+VP -> weka
+VP -> wike
+VP -> mi
+VP -> sina
+ZZ0201VP -> NP ZZ0200VP
+VP -> ZZ0201VP NP
+VP -> akesi
+VP -> ala
+VP -> ale
+VP -> ali
+VP -> ante
+VP -> ijo
+VP -> ike
+VP -> ilo
+VP -> insa
+VP -> jaki
+VP -> jan
+VP -> jo
+VP -> kala
+VP -> kalama
+VP -> kama
+VP -> kasi
+VP -> ken
+VP -> kili
+VP -> kiwen
+VP -> kule
+VP -> kute
+VP -> kulupu
+VP -> lawa
+VP -> len
+VP -> lete
+VP -> lili
+VP -> linja
+VP -> lipu
+VP -> luka
+VP -> lupa
+VP -> ma
+VP -> mama
+VP -> mani
+VP -> meli
+VP -> mije
+VP -> moku
+VP -> moli
+VP -> monsi
+VP -> mun
+VP -> musi
+VP -> mute
+VP -> nanpa
+VP -> nasin
+VP -> nena
+VP -> ni
+VP -> nimi
+VP -> noka
+VP -> oko
+VP -> olin
+VP -> ona
+VP -> pakala
+VP -> pali
+VP -> palisa
+VP -> pana
+VP -> pilin
+VP -> pimeja
+VP -> pini
+VP -> pipi
+VP -> poki
+VP -> poka
+VP -> pona
+VP -> seli
+VP -> selo
+VP -> seme
+VP -> sewi
+VP -> sijelo
+VP -> sike
+VP -> sinpin
+VP -> sitelen
+VP -> sona
+VP -> soweli
+VP -> suli
+VP -> suno
+VP -> supa
+VP -> suwi
+VP -> tan
+VP -> tawa
+VP -> telo
+VP -> tenpo
+VP -> toki
+VP -> tomo
+VP -> tu
+VP -> unpa
+VP -> uta
+VP -> utala
+VP -> walo
+VP -> wan
+VP -> waso
+VP -> wawa
+VP -> weka
+VP -> wile
+VP -> ZZ0202VP ZZ0203VP
+VP -> ZZ0204VP ZZ0205VP
+ZZ0209VP -> ZZ0206VP ZZ0207VP
+VP -> ZZ0209VP ZZ0208VP
+VP -> ZZ0210VP ZZ0211VP
+VP -> ZZ0212VP ZZ0213VP
+VP -> N Modifier
+VP -> N N
+ZZ0214VP -> N N
+VP -> ZZ0214VP Modifier
+ZZ0216VP -> NP ZZ0215VP
+ZZ0217VP -> ZZ0216VP N
+VP -> ZZ0217VP Modifier
+ZZ0219VP -> NP ZZ0218VP
+VP -> ZZ0219VP Name
+IntransVP -> anpa
+IntransVP -> ante
+IntransVP -> awen
+IntransVP -> ijo
+IntransVP -> ike
+IntransVP -> jaki
+IntransVP -> jan
+IntransVP -> jo
+IntransVP -> kalama
+IntransVP -> kama
+IntransVP -> ken
+IntransVP -> kepeken
+IntransVP -> kule
+IntransVP -> lape
+IntransVP -> lawa
+IntransVP -> lete
+IntransVP -> lili
+IntransVP -> lon
+IntransVP -> lukin
+IntransVP -> moku
+IntransVP -> moli
+IntransVP -> musi
+IntransVP -> mute
+IntransVP -> nasa
+IntransVP -> olin
+IntransVP -> open
+IntransVP -> pakala
+IntransVP -> pali
+IntransVP -> pana
+IntransVP -> pilin
+IntransVP -> pimeja
+IntransVP -> pini
+IntransVP -> poka
+IntransVP -> pona
+IntransVP -> seli
+IntransVP -> sin
+IntransVP -> sitelen
+IntransVP -> sona
+IntransVP -> suli
+IntransVP -> suwi
+IntransVP -> tawa
+IntransVP -> telo
+IntransVP -> toki
+IntransVP -> tomo
+IntransVP -> tu
+IntransVP -> unpa
+IntransVP -> utala
+IntransVP -> wan
+IntransVP -> wawa
+IntransVP -> weka
+IntransVP -> wile
+ZZ0221IntransVP -> V ZZ0220IntransVP
+IntransVP -> ZZ0221IntransVP V
+IntransVP -> ala
+IntransVP -> ale
+IntransVP -> ali
+IntransVP -> ante
+IntransVP -> awen
+IntransVP -> ijo
+IntransVP -> ike
+IntransVP -> insa
+IntransVP -> jaki
+IntransVP -> jan
+IntransVP -> jelo
+IntransVP -> kalama
+IntransVP -> kama
+IntransVP -> kin
+IntransVP -> kiwen
+IntransVP -> kule
+IntransVP -> kute
+IntransVP -> kulupu
+IntransVP -> laso
+IntransVP -> lape
+IntransVP -> lawa
+IntransVP -> lete
+IntransVP -> lili
+IntransVP -> loje
+IntransVP -> lukin
+IntransVP -> mama
+IntransVP -> meli
+IntransVP -> mi
+IntransVP -> mije
+IntransVP -> moku
+IntransVP -> moli
+IntransVP -> monsi
+IntransVP -> mun
+IntransVP -> musi
+IntransVP -> mute
+IntransVP -> nasa
+IntransVP -> ni
+IntransVP -> olin
+IntransVP -> ona
+IntransVP -> pakala
+IntransVP -> pali
+IntransVP -> pimeja
+IntransVP -> pini
+IntransVP -> poka
+IntransVP -> pona
+IntransVP -> sama
+IntransVP -> seli
+IntransVP -> seme
+IntransVP -> sewi
+IntransVP -> sike
+IntransVP -> sin
+IntransVP -> sina
+IntransVP -> suli
+IntransVP -> suwi
+IntransVP -> taso
+IntransVP -> tawa
+IntransVP -> telo
+IntransVP -> toki
+IntransVP -> tomo
+IntransVP -> tu
+IntransVP -> unpa
+IntransVP -> uta
+IntransVP -> walo
+IntransVP -> wan
+IntransVP -> wawa
+IntransVP -> weka
+IntransVP -> wike
+IntransVP -> mi
+IntransVP -> sina
+IntransVP -> akesi
+IntransVP -> ala
+IntransVP -> ale
+IntransVP -> ali
+IntransVP -> ante
+IntransVP -> ijo
+IntransVP -> ike
+IntransVP -> ilo
+IntransVP -> insa
+IntransVP -> jaki
+IntransVP -> jan
+IntransVP -> jo
+IntransVP -> kala
+IntransVP -> kalama
+IntransVP -> kama
+IntransVP -> kasi
+IntransVP -> ken
+IntransVP -> kili
+IntransVP -> kiwen
+IntransVP -> kule
+IntransVP -> kute
+IntransVP -> kulupu
+IntransVP -> lawa
+IntransVP -> len
+IntransVP -> lete
+IntransVP -> lili
+IntransVP -> linja
+IntransVP -> lipu
+IntransVP -> luka
+IntransVP -> lupa
+IntransVP -> ma
+IntransVP -> mama
+IntransVP -> mani
+IntransVP -> meli
+IntransVP -> mije
+IntransVP -> moku
+IntransVP -> moli
+IntransVP -> monsi
+IntransVP -> mun
+IntransVP -> musi
+IntransVP -> mute
+IntransVP -> nanpa
+IntransVP -> nasin
+IntransVP -> nena
+IntransVP -> ni
+IntransVP -> nimi
+IntransVP -> noka
+IntransVP -> oko
+IntransVP -> olin
+IntransVP -> ona
+IntransVP -> pakala
+IntransVP -> pali
+IntransVP -> palisa
+IntransVP -> pana
+IntransVP -> pilin
+IntransVP -> pimeja
+IntransVP -> pini
+IntransVP -> pipi
+IntransVP -> poki
+IntransVP -> poka
+IntransVP -> pona
+IntransVP -> seli
+IntransVP -> selo
+IntransVP -> seme
+IntransVP -> sewi
+IntransVP -> sijelo
+IntransVP -> sike
+IntransVP -> sinpin
+IntransVP -> sitelen
+IntransVP -> sona
+IntransVP -> soweli
+IntransVP -> suli
+IntransVP -> suno
+IntransVP -> supa
+IntransVP -> suwi
+IntransVP -> tan
+IntransVP -> tawa
+IntransVP -> telo
+IntransVP -> tenpo
+IntransVP -> toki
+IntransVP -> tomo
+IntransVP -> tu
+IntransVP -> unpa
+IntransVP -> uta
+IntransVP -> utala
+IntransVP -> walo
+IntransVP -> wan
+IntransVP -> waso
+IntransVP -> wawa
+IntransVP -> weka
+IntransVP -> wile
+ZZ0223IntransVP -> NP ZZ0222IntransVP
+IntransVP -> ZZ0223IntransVP NP
+IntransVP -> N Modifier
+IntransVP -> N N
+ZZ0224IntransVP -> N N
+IntransVP -> ZZ0224IntransVP Modifier
+ZZ0226IntransVP -> NP ZZ0225IntransVP
+ZZ0227IntransVP -> ZZ0226IntransVP N
+IntransVP -> ZZ0227IntransVP Modifier
+ZZ0229IntransVP -> NP ZZ0228IntransVP
+IntransVP -> ZZ0229IntransVP Name
+IntransVP -> akesi
+IntransVP -> ala
+IntransVP -> ale
+IntransVP -> ali
+IntransVP -> ante
+IntransVP -> ijo
+IntransVP -> ike
+IntransVP -> ilo
+IntransVP -> insa
+IntransVP -> jaki
+IntransVP -> jan
+IntransVP -> jo
+IntransVP -> kala
+IntransVP -> kalama
+IntransVP -> kama
+IntransVP -> kasi
+IntransVP -> ken
+IntransVP -> kili
+IntransVP -> kiwen
+IntransVP -> kule
+IntransVP -> kute
+IntransVP -> kulupu
+IntransVP -> lawa
+IntransVP -> len
+IntransVP -> lete
+IntransVP -> lili
+IntransVP -> linja
+IntransVP -> lipu
+IntransVP -> luka
+IntransVP -> lupa
+IntransVP -> ma
+IntransVP -> mama
+IntransVP -> mani
+IntransVP -> meli
+IntransVP -> mije
+IntransVP -> moku
+IntransVP -> moli
+IntransVP -> monsi
+IntransVP -> mun
+IntransVP -> musi
+IntransVP -> mute
+IntransVP -> nanpa
+IntransVP -> nasin
+IntransVP -> nena
+IntransVP -> ni
+IntransVP -> nimi
+IntransVP -> noka
+IntransVP -> oko
+IntransVP -> olin
+IntransVP -> ona
+IntransVP -> pakala
+IntransVP -> pali
+IntransVP -> palisa
+IntransVP -> pana
+IntransVP -> pilin
+IntransVP -> pimeja
+IntransVP -> pini
+IntransVP -> pipi
+IntransVP -> poki
+IntransVP -> poka
+IntransVP -> pona
+IntransVP -> seli
+IntransVP -> selo
+IntransVP -> seme
+IntransVP -> sewi
+IntransVP -> sijelo
+IntransVP -> sike
+IntransVP -> sinpin
+IntransVP -> sitelen
+IntransVP -> sona
+IntransVP -> soweli
+IntransVP -> suli
+IntransVP -> suno
+IntransVP -> supa
+IntransVP -> suwi
+IntransVP -> tan
+IntransVP -> tawa
+IntransVP -> telo
+IntransVP -> tenpo
+IntransVP -> toki
+IntransVP -> tomo
+IntransVP -> tu
+IntransVP -> unpa
+IntransVP -> uta
+IntransVP -> utala
+IntransVP -> walo
+IntransVP -> wan
+IntransVP -> waso
+IntransVP -> wawa
+IntransVP -> weka
+IntransVP -> wile
+IntransVP -> ZZ0230IntransVP ZZ0231IntransVP
+IntransVP -> ZZ0232IntransVP ZZ0233IntransVP
+ZZ0237IntransVP -> ZZ0234IntransVP ZZ0235IntransVP
+IntransVP -> ZZ0237IntransVP ZZ0236IntransVP
+IntransVP -> ZZ0238IntransVP ZZ0239IntransVP
+IntransVP -> ZZ0240IntransVP ZZ0241IntransVP
+IntransVP -> N Modifier
+IntransVP -> N N
+ZZ0242IntransVP -> N N
+IntransVP -> ZZ0242IntransVP Modifier
+ZZ0244IntransVP -> NP ZZ0243IntransVP
+ZZ0245IntransVP -> ZZ0244IntransVP N
+IntransVP -> ZZ0245IntransVP Modifier
+ZZ0247IntransVP -> NP ZZ0246IntransVP
+IntransVP -> ZZ0247IntransVP Name
+ZZ0119IntransVP -> anu
+ZZ0121Verb -> ala
+ZZ0123Modal -> kama
+ZZ0124Modal -> ala
+ZZ0125Modal -> kama
+ZZ0127Modal -> ken
+ZZ0128Modal -> ala
+ZZ0129Modal -> ken
+ZZ0131Modal -> wile
+ZZ0132Modal -> ala
+ZZ0133Modal -> wile
+N -> ZZ0248N ZZ0249N
+N -> ZZ0250N ZZ0251N
+ZZ0255N -> ZZ0252N ZZ0253N
+N -> ZZ0255N ZZ0254N
+N -> ZZ0256N ZZ0257N
+N -> ZZ0258N ZZ0259N
+ZZ0135N_NoMiSina -> jan
+ZZ0136N_NoMiSina -> 'Name'
+ZZ0137N_NoMiSina -> ma
+ZZ0138N_NoMiSina -> 'Name'
+ZZ0139N_NoMiSina -> ma
+ZZ0140N_NoMiSina -> tomo
+ZZ0141N_NoMiSina -> 'Name'
+ZZ0143N_NoMiSina -> toki
+ZZ0144N_NoMiSina -> 'Name'
+ZZ0145N_NoMiSina -> soweli
+ZZ0146N_NoMiSina -> 'Name'
+ZZ0147S -> mi
+ZZ0148S -> sina
+ZZ0149S -> li
+ZZ0151S -> li
+ZZ0153NP_NoMiSina -> jan
+ZZ0154NP_NoMiSina -> 'Name'
+ZZ0155NP_NoMiSina -> ma
+ZZ0156NP_NoMiSina -> 'Name'
+ZZ0157NP_NoMiSina -> ma
+ZZ0158NP_NoMiSina -> tomo
+ZZ0159NP_NoMiSina -> 'Name'
+ZZ0161NP_NoMiSina -> toki
+ZZ0162NP_NoMiSina -> 'Name'
+ZZ0163NP_NoMiSina -> soweli
+ZZ0164NP_NoMiSina -> 'Name'
+ZZ0166NP_NoMiSina -> pi
+ZZ0169NP_NoMiSina -> pi
+NP -> ZZ0260NP ZZ0261NP
+NP -> ZZ0262NP ZZ0263NP
+ZZ0267NP -> ZZ0264NP ZZ0265NP
+NP -> ZZ0267NP ZZ0266NP
+NP -> ZZ0268NP ZZ0269NP
+NP -> ZZ0270NP ZZ0271NP
+ZZ0171NP -> jan
+ZZ0172NP -> 'Name'
+ZZ0173NP -> ma
+ZZ0174NP -> 'Name'
+ZZ0175NP -> ma
+ZZ0176NP -> tomo
+ZZ0177NP -> 'Name'
+ZZ0179NP -> toki
+ZZ0180NP -> 'Name'
+ZZ0181NP -> soweli
+ZZ0182NP -> 'Name'
+ZZ0184NP -> pi
+ZZ0187NP -> pi
+Pred -> Modal V
+Pred -> V Mod
+Pred -> Modal YnV
+Pred -> YnV Mod
+Pred -> anpa
+Pred -> ante
+Pred -> awen
+Pred -> ijo
+Pred -> ike
+Pred -> jaki
+Pred -> jan
+Pred -> jo
+Pred -> kalama
+Pred -> kama
+Pred -> ken
+Pred -> kepeken
+Pred -> kule
+Pred -> lape
+Pred -> lawa
+Pred -> lete
+Pred -> lili
+Pred -> lon
+Pred -> lukin
+Pred -> moku
+Pred -> moli
+Pred -> musi
+Pred -> mute
+Pred -> nasa
+Pred -> olin
+Pred -> open
+Pred -> pakala
+Pred -> pali
+Pred -> pana
+Pred -> pilin
+Pred -> pimeja
+Pred -> pini
+Pred -> poka
+Pred -> pona
+Pred -> seli
+Pred -> sin
+Pred -> sitelen
+Pred -> sona
+Pred -> suli
+Pred -> suwi
+Pred -> tawa
+Pred -> telo
+Pred -> toki
+Pred -> tomo
+Pred -> tu
+Pred -> unpa
+Pred -> utala
+Pred -> wan
+Pred -> wawa
+Pred -> weka
+Pred -> wile
+ZZ0273Pred -> V ZZ0272Pred
+Pred -> ZZ0273Pred V
+ZZ0189Pred -> lon
+ZZ0190Pred -> tawa
+ZZ0191Pred -> lon
+ZZ0193Pred -> tawa
+Pred -> Mod Modifier
+Pred -> ala
+Pred -> ale
+Pred -> ali
+Pred -> ante
+Pred -> awen
+Pred -> ijo
+Pred -> ike
+Pred -> insa
+Pred -> jaki
+Pred -> jan
+Pred -> jelo
+Pred -> kalama
+Pred -> kama
+Pred -> kin
+Pred -> kiwen
+Pred -> kule
+Pred -> kute
+Pred -> kulupu
+Pred -> laso
+Pred -> lape
+Pred -> lawa
+Pred -> lete
+Pred -> lili
+Pred -> loje
+Pred -> lukin
+Pred -> mama
+Pred -> meli
+Pred -> mi
+Pred -> mije
+Pred -> moku
+Pred -> moli
+Pred -> monsi
+Pred -> mun
+Pred -> musi
+Pred -> mute
+Pred -> nasa
+Pred -> ni
+Pred -> olin
+Pred -> ona
+Pred -> pakala
+Pred -> pali
+Pred -> pimeja
+Pred -> pini
+Pred -> poka
+Pred -> pona
+Pred -> sama
+Pred -> seli
+Pred -> seme
+Pred -> sewi
+Pred -> sike
+Pred -> sin
+Pred -> sina
+Pred -> suli
+Pred -> suwi
+Pred -> taso
+Pred -> tawa
+Pred -> telo
+Pred -> toki
+Pred -> tomo
+Pred -> tu
+Pred -> unpa
+Pred -> uta
+Pred -> walo
+Pred -> wan
+Pred -> wawa
+Pred -> weka
+Pred -> wike
+Pred -> mi
+Pred -> sina
+ZZ0275Pred -> NP ZZ0274Pred
+Pred -> ZZ0275Pred NP
+Pred -> akesi
+Pred -> ala
+Pred -> ale
+Pred -> ali
+Pred -> ante
+Pred -> ijo
+Pred -> ike
+Pred -> ilo
+Pred -> insa
+Pred -> jaki
+Pred -> jan
+Pred -> jo
+Pred -> kala
+Pred -> kalama
+Pred -> kama
+Pred -> kasi
+Pred -> ken
+Pred -> kili
+Pred -> kiwen
+Pred -> kule
+Pred -> kute
+Pred -> kulupu
+Pred -> lawa
+Pred -> len
+Pred -> lete
+Pred -> lili
+Pred -> linja
+Pred -> lipu
+Pred -> luka
+Pred -> lupa
+Pred -> ma
+Pred -> mama
+Pred -> mani
+Pred -> meli
+Pred -> mije
+Pred -> moku
+Pred -> moli
+Pred -> monsi
+Pred -> mun
+Pred -> musi
+Pred -> mute
+Pred -> nanpa
+Pred -> nasin
+Pred -> nena
+Pred -> ni
+Pred -> nimi
+Pred -> noka
+Pred -> oko
+Pred -> olin
+Pred -> ona
+Pred -> pakala
+Pred -> pali
+Pred -> palisa
+Pred -> pana
+Pred -> pilin
+Pred -> pimeja
+Pred -> pini
+Pred -> pipi
+Pred -> poki
+Pred -> poka
+Pred -> pona
+Pred -> seli
+Pred -> selo
+Pred -> seme
+Pred -> sewi
+Pred -> sijelo
+Pred -> sike
+Pred -> sinpin
+Pred -> sitelen
+Pred -> sona
+Pred -> soweli
+Pred -> suli
+Pred -> suno
+Pred -> supa
+Pred -> suwi
+Pred -> tan
+Pred -> tawa
+Pred -> telo
+Pred -> tenpo
+Pred -> toki
+Pred -> tomo
+Pred -> tu
+Pred -> unpa
+Pred -> uta
+Pred -> utala
+Pred -> walo
+Pred -> wan
+Pred -> waso
+Pred -> wawa
+Pred -> weka
+Pred -> wile
+Pred -> ZZ0276Pred ZZ0277Pred
+Pred -> ZZ0278Pred ZZ0279Pred
+ZZ0283Pred -> ZZ0280Pred ZZ0281Pred
+Pred -> ZZ0283Pred ZZ0282Pred
+Pred -> ZZ0284Pred ZZ0285Pred
+Pred -> ZZ0286Pred ZZ0287Pred
+Pred -> N Modifier
+Pred -> N N
+ZZ0288Pred -> N N
+Pred -> ZZ0288Pred Modifier
+ZZ0290Pred -> NP ZZ0289Pred
+ZZ0291Pred -> ZZ0290Pred N
+Pred -> ZZ0291Pred Modifier
+ZZ0293Pred -> NP ZZ0292Pred
+Pred -> ZZ0293Pred Name
+Pred -> ZZ0294Pred ZZ0295Pred
+Pred -> ZZ0296Pred ZZ0297Pred
+ZZ0301Pred -> ZZ0298Pred ZZ0299Pred
+Pred -> ZZ0301Pred ZZ0300Pred
+Pred -> ZZ0302Pred ZZ0303Pred
+Pred -> ZZ0304Pred ZZ0305Pred
+Pred -> anpa
+Pred -> ante
+Pred -> awen
+Pred -> ijo
+Pred -> ike
+Pred -> jaki
+Pred -> jan
+Pred -> jo
+Pred -> kalama
+Pred -> kama
+Pred -> ken
+Pred -> kepeken
+Pred -> kule
+Pred -> lape
+Pred -> lawa
+Pred -> lete
+Pred -> lili
+Pred -> lon
+Pred -> lukin
+Pred -> moku
+Pred -> moli
+Pred -> musi
+Pred -> mute
+Pred -> nasa
+Pred -> olin
+Pred -> open
+Pred -> pakala
+Pred -> pali
+Pred -> pana
+Pred -> pilin
+Pred -> pimeja
+Pred -> pini
+Pred -> poka
+Pred -> pona
+Pred -> seli
+Pred -> sin
+Pred -> sitelen
+Pred -> sona
+Pred -> suli
+Pred -> suwi
+Pred -> tawa
+Pred -> telo
+Pred -> toki
+Pred -> tomo
+Pred -> tu
+Pred -> unpa
+Pred -> utala
+Pred -> wan
+Pred -> wawa
+Pred -> weka
+Pred -> wile
+ZZ0307Pred -> V ZZ0306Pred
+Pred -> ZZ0307Pred V
+Pred -> ala
+Pred -> ale
+Pred -> ali
+Pred -> ante
+Pred -> awen
+Pred -> ijo
+Pred -> ike
+Pred -> insa
+Pred -> jaki
+Pred -> jan
+Pred -> jelo
+Pred -> kalama
+Pred -> kama
+Pred -> kin
+Pred -> kiwen
+Pred -> kule
+Pred -> kute
+Pred -> kulupu
+Pred -> laso
+Pred -> lape
+Pred -> lawa
+Pred -> lete
+Pred -> lili
+Pred -> loje
+Pred -> lukin
+Pred -> mama
+Pred -> meli
+Pred -> mi
+Pred -> mije
+Pred -> moku
+Pred -> moli
+Pred -> monsi
+Pred -> mun
+Pred -> musi
+Pred -> mute
+Pred -> nasa
+Pred -> ni
+Pred -> olin
+Pred -> ona
+Pred -> pakala
+Pred -> pali
+Pred -> pimeja
+Pred -> pini
+Pred -> poka
+Pred -> pona
+Pred -> sama
+Pred -> seli
+Pred -> seme
+Pred -> sewi
+Pred -> sike
+Pred -> sin
+Pred -> sina
+Pred -> suli
+Pred -> suwi
+Pred -> taso
+Pred -> tawa
+Pred -> telo
+Pred -> toki
+Pred -> tomo
+Pred -> tu
+Pred -> unpa
+Pred -> uta
+Pred -> walo
+Pred -> wan
+Pred -> wawa
+Pred -> weka
+Pred -> wike
+Pred -> mi
+Pred -> sina
+Pred -> akesi
+Pred -> ala
+Pred -> ale
+Pred -> ali
+Pred -> ante
+Pred -> ijo
+Pred -> ike
+Pred -> ilo
+Pred -> insa
+Pred -> jaki
+Pred -> jan
+Pred -> jo
+Pred -> kala
+Pred -> kalama
+Pred -> kama
+Pred -> kasi
+Pred -> ken
+Pred -> kili
+Pred -> kiwen
+Pred -> kule
+Pred -> kute
+Pred -> kulupu
+Pred -> lawa
+Pred -> len
+Pred -> lete
+Pred -> lili
+Pred -> linja
+Pred -> lipu
+Pred -> luka
+Pred -> lupa
+Pred -> ma
+Pred -> mama
+Pred -> mani
+Pred -> meli
+Pred -> mije
+Pred -> moku
+Pred -> moli
+Pred -> monsi
+Pred -> mun
+Pred -> musi
+Pred -> mute
+Pred -> nanpa
+Pred -> nasin
+Pred -> nena
+Pred -> ni
+Pred -> nimi
+Pred -> noka
+Pred -> oko
+Pred -> olin
+Pred -> ona
+Pred -> pakala
+Pred -> pali
+Pred -> palisa
+Pred -> pana
+Pred -> pilin
+Pred -> pimeja
+Pred -> pini
+Pred -> pipi
+Pred -> poki
+Pred -> poka
+Pred -> pona
+Pred -> seli
+Pred -> selo
+Pred -> seme
+Pred -> sewi
+Pred -> sijelo
+Pred -> sike
+Pred -> sinpin
+Pred -> sitelen
+Pred -> sona
+Pred -> soweli
+Pred -> suli
+Pred -> suno
+Pred -> supa
+Pred -> suwi
+Pred -> tan
+Pred -> tawa
+Pred -> telo
+Pred -> tenpo
+Pred -> toki
+Pred -> tomo
+Pred -> tu
+Pred -> unpa
+Pred -> uta
+Pred -> utala
+Pred -> walo
+Pred -> wan
+Pred -> waso
+Pred -> wawa
+Pred -> weka
+Pred -> wile
+Pred -> ZZ0308Pred ZZ0309Pred
+Pred -> ZZ0310Pred ZZ0311Pred
+ZZ0315Pred -> ZZ0312Pred ZZ0313Pred
+Pred -> ZZ0315Pred ZZ0314Pred
+Pred -> ZZ0316Pred ZZ0317Pred
+Pred -> ZZ0318Pred ZZ0319Pred
+ZZ0321Pred -> NP ZZ0320Pred
+Pred -> ZZ0321Pred NP
+Pred -> N Modifier
+Pred -> N N
+ZZ0322Pred -> N N
+Pred -> ZZ0322Pred Modifier
+ZZ0324Pred -> NP ZZ0323Pred
+ZZ0325Pred -> ZZ0324Pred N
+Pred -> ZZ0325Pred Modifier
+ZZ0327Pred -> NP ZZ0326Pred
+Pred -> ZZ0327Pred Name
+Pred -> akesi
+Pred -> ala
+Pred -> ale
+Pred -> ali
+Pred -> ante
+Pred -> ijo
+Pred -> ike
+Pred -> ilo
+Pred -> insa
+Pred -> jaki
+Pred -> jan
+Pred -> jo
+Pred -> kala
+Pred -> kalama
+Pred -> kama
+Pred -> kasi
+Pred -> ken
+Pred -> kili
+Pred -> kiwen
+Pred -> kule
+Pred -> kute
+Pred -> kulupu
+Pred -> lawa
+Pred -> len
+Pred -> lete
+Pred -> lili
+Pred -> linja
+Pred -> lipu
+Pred -> luka
+Pred -> lupa
+Pred -> ma
+Pred -> mama
+Pred -> mani
+Pred -> meli
+Pred -> mije
+Pred -> moku
+Pred -> moli
+Pred -> monsi
+Pred -> mun
+Pred -> musi
+Pred -> mute
+Pred -> nanpa
+Pred -> nasin
+Pred -> nena
+Pred -> ni
+Pred -> nimi
+Pred -> noka
+Pred -> oko
+Pred -> olin
+Pred -> ona
+Pred -> pakala
+Pred -> pali
+Pred -> palisa
+Pred -> pana
+Pred -> pilin
+Pred -> pimeja
+Pred -> pini
+Pred -> pipi
+Pred -> poki
+Pred -> poka
+Pred -> pona
+Pred -> seli
+Pred -> selo
+Pred -> seme
+Pred -> sewi
+Pred -> sijelo
+Pred -> sike
+Pred -> sinpin
+Pred -> sitelen
+Pred -> sona
+Pred -> soweli
+Pred -> suli
+Pred -> suno
+Pred -> supa
+Pred -> suwi
+Pred -> tan
+Pred -> tawa
+Pred -> telo
+Pred -> tenpo
+Pred -> toki
+Pred -> tomo
+Pred -> tu
+Pred -> unpa
+Pred -> uta
+Pred -> utala
+Pred -> walo
+Pred -> wan
+Pred -> waso
+Pred -> wawa
+Pred -> weka
+Pred -> wile
+Pred -> ZZ0328Pred ZZ0329Pred
+Pred -> ZZ0330Pred ZZ0331Pred
+ZZ0335Pred -> ZZ0332Pred ZZ0333Pred
+Pred -> ZZ0335Pred ZZ0334Pred
+Pred -> ZZ0336Pred ZZ0337Pred
+Pred -> ZZ0338Pred ZZ0339Pred
+Pred -> N Modifier
+Pred -> N N
+ZZ0340Pred -> N N
+Pred -> ZZ0340Pred Modifier
+ZZ0342Pred -> NP ZZ0341Pred
+ZZ0343Pred -> ZZ0342Pred N
+Pred -> ZZ0343Pred Modifier
+ZZ0345Pred -> NP ZZ0344Pred
+Pred -> ZZ0345Pred Name
+ZZ0195Pred -> anu
+VP -> anpa
+VP -> ante
+VP -> awen
+VP -> ijo
+VP -> ike
+VP -> jaki
+VP -> jan
+VP -> jo
+VP -> kalama
+VP -> kama
+VP -> ken
+VP -> kepeken
+VP -> kule
+VP -> lape
+VP -> lawa
+VP -> lete
+VP -> lili
+VP -> lon
+VP -> lukin
+VP -> moku
+VP -> moli
+VP -> musi
+VP -> mute
+VP -> nasa
+VP -> olin
+VP -> open
+VP -> pakala
+VP -> pali
+VP -> pana
+VP -> pilin
+VP -> pimeja
+VP -> pini
+VP -> poka
+VP -> pona
+VP -> seli
+VP -> sin
+VP -> sitelen
+VP -> sona
+VP -> suli
+VP -> suwi
+VP -> tawa
+VP -> telo
+VP -> toki
+VP -> tomo
+VP -> tu
+VP -> unpa
+VP -> utala
+VP -> wan
+VP -> wawa
+VP -> weka
+VP -> wile
+ZZ0347VP -> V ZZ0346VP
+VP -> ZZ0347VP V
+ZZ0198VP -> ala
+VP -> ala
+VP -> ale
+VP -> ali
+VP -> ante
+VP -> awen
+VP -> ijo
+VP -> ike
+VP -> insa
+VP -> jaki
+VP -> jan
+VP -> jelo
+VP -> kalama
+VP -> kama
+VP -> kin
+VP -> kiwen
+VP -> kule
+VP -> kute
+VP -> kulupu
+VP -> laso
+VP -> lape
+VP -> lawa
+VP -> lete
+VP -> lili
+VP -> loje
+VP -> lukin
+VP -> mama
+VP -> meli
+VP -> mi
+VP -> mije
+VP -> moku
+VP -> moli
+VP -> monsi
+VP -> mun
+VP -> musi
+VP -> mute
+VP -> nasa
+VP -> ni
+VP -> olin
+VP -> ona
+VP -> pakala
+VP -> pali
+VP -> pimeja
+VP -> pini
+VP -> poka
+VP -> pona
+VP -> sama
+VP -> seli
+VP -> seme
+VP -> sewi
+VP -> sike
+VP -> sin
+VP -> sina
+VP -> suli
+VP -> suwi
+VP -> taso
+VP -> tawa
+VP -> telo
+VP -> toki
+VP -> tomo
+VP -> tu
+VP -> unpa
+VP -> uta
+VP -> walo
+VP -> wan
+VP -> wawa
+VP -> weka
+VP -> wike
+VP -> mi
+VP -> sina
+VP -> akesi
+VP -> ala
+VP -> ale
+VP -> ali
+VP -> ante
+VP -> ijo
+VP -> ike
+VP -> ilo
+VP -> insa
+VP -> jaki
+VP -> jan
+VP -> jo
+VP -> kala
+VP -> kalama
+VP -> kama
+VP -> kasi
+VP -> ken
+VP -> kili
+VP -> kiwen
+VP -> kule
+VP -> kute
+VP -> kulupu
+VP -> lawa
+VP -> len
+VP -> lete
+VP -> lili
+VP -> linja
+VP -> lipu
+VP -> luka
+VP -> lupa
+VP -> ma
+VP -> mama
+VP -> mani
+VP -> meli
+VP -> mije
+VP -> moku
+VP -> moli
+VP -> monsi
+VP -> mun
+VP -> musi
+VP -> mute
+VP -> nanpa
+VP -> nasin
+VP -> nena
+VP -> ni
+VP -> nimi
+VP -> noka
+VP -> oko
+VP -> olin
+VP -> ona
+VP -> pakala
+VP -> pali
+VP -> palisa
+VP -> pana
+VP -> pilin
+VP -> pimeja
+VP -> pini
+VP -> pipi
+VP -> poki
+VP -> poka
+VP -> pona
+VP -> seli
+VP -> selo
+VP -> seme
+VP -> sewi
+VP -> sijelo
+VP -> sike
+VP -> sinpin
+VP -> sitelen
+VP -> sona
+VP -> soweli
+VP -> suli
+VP -> suno
+VP -> supa
+VP -> suwi
+VP -> tan
+VP -> tawa
+VP -> telo
+VP -> tenpo
+VP -> toki
+VP -> tomo
+VP -> tu
+VP -> unpa
+VP -> uta
+VP -> utala
+VP -> walo
+VP -> wan
+VP -> waso
+VP -> wawa
+VP -> weka
+VP -> wile
+VP -> ZZ0348VP ZZ0349VP
+VP -> ZZ0350VP ZZ0351VP
+ZZ0355VP -> ZZ0352VP ZZ0353VP
+VP -> ZZ0355VP ZZ0354VP
+VP -> ZZ0356VP ZZ0357VP
+VP -> ZZ0358VP ZZ0359VP
+ZZ0361VP -> NP ZZ0360VP
+VP -> ZZ0361VP NP
+VP -> N Modifier
+VP -> N N
+ZZ0362VP -> N N
+VP -> ZZ0362VP Modifier
+ZZ0364VP -> NP ZZ0363VP
+ZZ0365VP -> ZZ0364VP N
+VP -> ZZ0365VP Modifier
+ZZ0367VP -> NP ZZ0366VP
+VP -> ZZ0367VP Name
+VP -> akesi
+VP -> ala
+VP -> ale
+VP -> ali
+VP -> ante
+VP -> ijo
+VP -> ike
+VP -> ilo
+VP -> insa
+VP -> jaki
+VP -> jan
+VP -> jo
+VP -> kala
+VP -> kalama
+VP -> kama
+VP -> kasi
+VP -> ken
+VP -> kili
+VP -> kiwen
+VP -> kule
+VP -> kute
+VP -> kulupu
+VP -> lawa
+VP -> len
+VP -> lete
+VP -> lili
+VP -> linja
+VP -> lipu
+VP -> luka
+VP -> lupa
+VP -> ma
+VP -> mama
+VP -> mani
+VP -> meli
+VP -> mije
+VP -> moku
+VP -> moli
+VP -> monsi
+VP -> mun
+VP -> musi
+VP -> mute
+VP -> nanpa
+VP -> nasin
+VP -> nena
+VP -> ni
+VP -> nimi
+VP -> noka
+VP -> oko
+VP -> olin
+VP -> ona
+VP -> pakala
+VP -> pali
+VP -> palisa
+VP -> pana
+VP -> pilin
+VP -> pimeja
+VP -> pini
+VP -> pipi
+VP -> poki
+VP -> poka
+VP -> pona
+VP -> seli
+VP -> selo
+VP -> seme
+VP -> sewi
+VP -> sijelo
+VP -> sike
+VP -> sinpin
+VP -> sitelen
+VP -> sona
+VP -> soweli
+VP -> suli
+VP -> suno
+VP -> supa
+VP -> suwi
+VP -> tan
+VP -> tawa
+VP -> telo
+VP -> tenpo
+VP -> toki
+VP -> tomo
+VP -> tu
+VP -> unpa
+VP -> uta
+VP -> utala
+VP -> walo
+VP -> wan
+VP -> waso
+VP -> wawa
+VP -> weka
+VP -> wile
+VP -> ZZ0368VP ZZ0369VP
+VP -> ZZ0370VP ZZ0371VP
+ZZ0375VP -> ZZ0372VP ZZ0373VP
+VP -> ZZ0375VP ZZ0374VP
+VP -> ZZ0376VP ZZ0377VP
+VP -> ZZ0378VP ZZ0379VP
+VP -> N Modifier
+VP -> N N
+ZZ0380VP -> N N
+VP -> ZZ0380VP Modifier
+ZZ0382VP -> NP ZZ0381VP
+ZZ0383VP -> ZZ0382VP N
+VP -> ZZ0383VP Modifier
+ZZ0385VP -> NP ZZ0384VP
+VP -> ZZ0385VP Name
+ZZ0200VP -> anu
+VP -> ZZ0386VP ZZ0387VP
+VP -> ZZ0388VP ZZ0389VP
+ZZ0393VP -> ZZ0390VP ZZ0391VP
+VP -> ZZ0393VP ZZ0392VP
+VP -> ZZ0394VP ZZ0395VP
+VP -> ZZ0396VP ZZ0397VP
+ZZ0202VP -> jan
+ZZ0203VP -> 'Name'
+ZZ0204VP -> ma
+ZZ0205VP -> 'Name'
+ZZ0206VP -> ma
+ZZ0207VP -> tomo
+ZZ0208VP -> 'Name'
+ZZ0210VP -> toki
+ZZ0211VP -> 'Name'
+ZZ0212VP -> soweli
+ZZ0213VP -> 'Name'
+ZZ0215VP -> pi
+ZZ0218VP -> pi
+ZZ0220IntransVP -> ala
+IntransVP -> akesi
+IntransVP -> ala
+IntransVP -> ale
+IntransVP -> ali
+IntransVP -> ante
+IntransVP -> ijo
+IntransVP -> ike
+IntransVP -> ilo
+IntransVP -> insa
+IntransVP -> jaki
+IntransVP -> jan
+IntransVP -> jo
+IntransVP -> kala
+IntransVP -> kalama
+IntransVP -> kama
+IntransVP -> kasi
+IntransVP -> ken
+IntransVP -> kili
+IntransVP -> kiwen
+IntransVP -> kule
+IntransVP -> kute
+IntransVP -> kulupu
+IntransVP -> lawa
+IntransVP -> len
+IntransVP -> lete
+IntransVP -> lili
+IntransVP -> linja
+IntransVP -> lipu
+IntransVP -> luka
+IntransVP -> lupa
+IntransVP -> ma
+IntransVP -> mama
+IntransVP -> mani
+IntransVP -> meli
+IntransVP -> mije
+IntransVP -> moku
+IntransVP -> moli
+IntransVP -> monsi
+IntransVP -> mun
+IntransVP -> musi
+IntransVP -> mute
+IntransVP -> nanpa
+IntransVP -> nasin
+IntransVP -> nena
+IntransVP -> ni
+IntransVP -> nimi
+IntransVP -> noka
+IntransVP -> oko
+IntransVP -> olin
+IntransVP -> ona
+IntransVP -> pakala
+IntransVP -> pali
+IntransVP -> palisa
+IntransVP -> pana
+IntransVP -> pilin
+IntransVP -> pimeja
+IntransVP -> pini
+IntransVP -> pipi
+IntransVP -> poki
+IntransVP -> poka
+IntransVP -> pona
+IntransVP -> seli
+IntransVP -> selo
+IntransVP -> seme
+IntransVP -> sewi
+IntransVP -> sijelo
+IntransVP -> sike
+IntransVP -> sinpin
+IntransVP -> sitelen
+IntransVP -> sona
+IntransVP -> soweli
+IntransVP -> suli
+IntransVP -> suno
+IntransVP -> supa
+IntransVP -> suwi
+IntransVP -> tan
+IntransVP -> tawa
+IntransVP -> telo
+IntransVP -> tenpo
+IntransVP -> toki
+IntransVP -> tomo
+IntransVP -> tu
+IntransVP -> unpa
+IntransVP -> uta
+IntransVP -> utala
+IntransVP -> walo
+IntransVP -> wan
+IntransVP -> waso
+IntransVP -> wawa
+IntransVP -> weka
+IntransVP -> wile
+IntransVP -> ZZ0398IntransVP ZZ0399IntransVP
+IntransVP -> ZZ0400IntransVP ZZ0401IntransVP
+ZZ0405IntransVP -> ZZ0402IntransVP ZZ0403IntransVP
+IntransVP -> ZZ0405IntransVP ZZ0404IntransVP
+IntransVP -> ZZ0406IntransVP ZZ0407IntransVP
+IntransVP -> ZZ0408IntransVP ZZ0409IntransVP
+IntransVP -> ZZ0410IntransVP ZZ0411IntransVP
+IntransVP -> ZZ0412IntransVP ZZ0413IntransVP
+ZZ0417IntransVP -> ZZ0414IntransVP ZZ0415IntransVP
+IntransVP -> ZZ0417IntransVP ZZ0416IntransVP
+IntransVP -> ZZ0418IntransVP ZZ0419IntransVP
+IntransVP -> ZZ0420IntransVP ZZ0421IntransVP
+IntransVP -> N Modifier
+IntransVP -> N N
+ZZ0422IntransVP -> N N
+IntransVP -> ZZ0422IntransVP Modifier
+ZZ0424IntransVP -> NP ZZ0423IntransVP
+ZZ0425IntransVP -> ZZ0424IntransVP N
+IntransVP -> ZZ0425IntransVP Modifier
+ZZ0427IntransVP -> NP ZZ0426IntransVP
+IntransVP -> ZZ0427IntransVP Name
+ZZ0222IntransVP -> anu
+ZZ0225IntransVP -> pi
+ZZ0228IntransVP -> pi
+IntransVP -> ZZ0428IntransVP ZZ0429IntransVP
+IntransVP -> ZZ0430IntransVP ZZ0431IntransVP
+ZZ0435IntransVP -> ZZ0432IntransVP ZZ0433IntransVP
+IntransVP -> ZZ0435IntransVP ZZ0434IntransVP
+IntransVP -> ZZ0436IntransVP ZZ0437IntransVP
+IntransVP -> ZZ0438IntransVP ZZ0439IntransVP
+ZZ0230IntransVP -> jan
+ZZ0231IntransVP -> 'Name'
+ZZ0232IntransVP -> ma
+ZZ0233IntransVP -> 'Name'
+ZZ0234IntransVP -> ma
+ZZ0235IntransVP -> tomo
+ZZ0236IntransVP -> 'Name'
+ZZ0238IntransVP -> toki
+ZZ0239IntransVP -> 'Name'
+ZZ0240IntransVP -> soweli
+ZZ0241IntransVP -> 'Name'
+ZZ0243IntransVP -> pi
+ZZ0246IntransVP -> pi
+ZZ0248N -> jan
+ZZ0249N -> 'Name'
+ZZ0250N -> ma
+ZZ0251N -> 'Name'
+ZZ0252N -> ma
+ZZ0253N -> tomo
+ZZ0254N -> 'Name'
+ZZ0256N -> toki
+ZZ0257N -> 'Name'
+ZZ0258N -> soweli
+ZZ0259N -> 'Name'
+ZZ0260NP -> jan
+ZZ0261NP -> 'Name'
+ZZ0262NP -> ma
+ZZ0263NP -> 'Name'
+ZZ0264NP -> ma
+ZZ0265NP -> tomo
+ZZ0266NP -> 'Name'
+ZZ0268NP -> toki
+ZZ0269NP -> 'Name'
+ZZ0270NP -> soweli
+ZZ0271NP -> 'Name'
+Pred -> anpa
+Pred -> ante
+Pred -> awen
+Pred -> ijo
+Pred -> ike
+Pred -> jaki
+Pred -> jan
+Pred -> jo
+Pred -> kalama
+Pred -> kama
+Pred -> ken
+Pred -> kepeken
+Pred -> kule
+Pred -> lape
+Pred -> lawa
+Pred -> lete
+Pred -> lili
+Pred -> lon
+Pred -> lukin
+Pred -> moku
+Pred -> moli
+Pred -> musi
+Pred -> mute
+Pred -> nasa
+Pred -> olin
+Pred -> open
+Pred -> pakala
+Pred -> pali
+Pred -> pana
+Pred -> pilin
+Pred -> pimeja
+Pred -> pini
+Pred -> poka
+Pred -> pona
+Pred -> seli
+Pred -> sin
+Pred -> sitelen
+Pred -> sona
+Pred -> suli
+Pred -> suwi
+Pred -> tawa
+Pred -> telo
+Pred -> toki
+Pred -> tomo
+Pred -> tu
+Pred -> unpa
+Pred -> utala
+Pred -> wan
+Pred -> wawa
+Pred -> weka
+Pred -> wile
+ZZ0441Pred -> V ZZ0440Pred
+Pred -> ZZ0441Pred V
+ZZ0272Pred -> ala
+Pred -> ala
+Pred -> ale
+Pred -> ali
+Pred -> ante
+Pred -> awen
+Pred -> ijo
+Pred -> ike
+Pred -> insa
+Pred -> jaki
+Pred -> jan
+Pred -> jelo
+Pred -> kalama
+Pred -> kama
+Pred -> kin
+Pred -> kiwen
+Pred -> kule
+Pred -> kute
+Pred -> kulupu
+Pred -> laso
+Pred -> lape
+Pred -> lawa
+Pred -> lete
+Pred -> lili
+Pred -> loje
+Pred -> lukin
+Pred -> mama
+Pred -> meli
+Pred -> mi
+Pred -> mije
+Pred -> moku
+Pred -> moli
+Pred -> monsi
+Pred -> mun
+Pred -> musi
+Pred -> mute
+Pred -> nasa
+Pred -> ni
+Pred -> olin
+Pred -> ona
+Pred -> pakala
+Pred -> pali
+Pred -> pimeja
+Pred -> pini
+Pred -> poka
+Pred -> pona
+Pred -> sama
+Pred -> seli
+Pred -> seme
+Pred -> sewi
+Pred -> sike
+Pred -> sin
+Pred -> sina
+Pred -> suli
+Pred -> suwi
+Pred -> taso
+Pred -> tawa
+Pred -> telo
+Pred -> toki
+Pred -> tomo
+Pred -> tu
+Pred -> unpa
+Pred -> uta
+Pred -> walo
+Pred -> wan
+Pred -> wawa
+Pred -> weka
+Pred -> wike
+Pred -> mi
+Pred -> sina
+Pred -> akesi
+Pred -> ala
+Pred -> ale
+Pred -> ali
+Pred -> ante
+Pred -> ijo
+Pred -> ike
+Pred -> ilo
+Pred -> insa
+Pred -> jaki
+Pred -> jan
+Pred -> jo
+Pred -> kala
+Pred -> kalama
+Pred -> kama
+Pred -> kasi
+Pred -> ken
+Pred -> kili
+Pred -> kiwen
+Pred -> kule
+Pred -> kute
+Pred -> kulupu
+Pred -> lawa
+Pred -> len
+Pred -> lete
+Pred -> lili
+Pred -> linja
+Pred -> lipu
+Pred -> luka
+Pred -> lupa
+Pred -> ma
+Pred -> mama
+Pred -> mani
+Pred -> meli
+Pred -> mije
+Pred -> moku
+Pred -> moli
+Pred -> monsi
+Pred -> mun
+Pred -> musi
+Pred -> mute
+Pred -> nanpa
+Pred -> nasin
+Pred -> nena
+Pred -> ni
+Pred -> nimi
+Pred -> noka
+Pred -> oko
+Pred -> olin
+Pred -> ona
+Pred -> pakala
+Pred -> pali
+Pred -> palisa
+Pred -> pana
+Pred -> pilin
+Pred -> pimeja
+Pred -> pini
+Pred -> pipi
+Pred -> poki
+Pred -> poka
+Pred -> pona
+Pred -> seli
+Pred -> selo
+Pred -> seme
+Pred -> sewi
+Pred -> sijelo
+Pred -> sike
+Pred -> sinpin
+Pred -> sitelen
+Pred -> sona
+Pred -> soweli
+Pred -> suli
+Pred -> suno
+Pred -> supa
+Pred -> suwi
+Pred -> tan
+Pred -> tawa
+Pred -> telo
+Pred -> tenpo
+Pred -> toki
+Pred -> tomo
+Pred -> tu
+Pred -> unpa
+Pred -> uta
+Pred -> utala
+Pred -> walo
+Pred -> wan
+Pred -> waso
+Pred -> wawa
+Pred -> weka
+Pred -> wile
+Pred -> ZZ0442Pred ZZ0443Pred
+Pred -> ZZ0444Pred ZZ0445Pred
+ZZ0449Pred -> ZZ0446Pred ZZ0447Pred
+Pred -> ZZ0449Pred ZZ0448Pred
+Pred -> ZZ0450Pred ZZ0451Pred
+Pred -> ZZ0452Pred ZZ0453Pred
+ZZ0455Pred -> NP ZZ0454Pred
+Pred -> ZZ0455Pred NP
+Pred -> N Modifier
+Pred -> N N
+ZZ0456Pred -> N N
+Pred -> ZZ0456Pred Modifier
+ZZ0458Pred -> NP ZZ0457Pred
+ZZ0459Pred -> ZZ0458Pred N
+Pred -> ZZ0459Pred Modifier
+ZZ0461Pred -> NP ZZ0460Pred
+Pred -> ZZ0461Pred Name
+Pred -> akesi
+Pred -> ala
+Pred -> ale
+Pred -> ali
+Pred -> ante
+Pred -> ijo
+Pred -> ike
+Pred -> ilo
+Pred -> insa
+Pred -> jaki
+Pred -> jan
+Pred -> jo
+Pred -> kala
+Pred -> kalama
+Pred -> kama
+Pred -> kasi
+Pred -> ken
+Pred -> kili
+Pred -> kiwen
+Pred -> kule
+Pred -> kute
+Pred -> kulupu
+Pred -> lawa
+Pred -> len
+Pred -> lete
+Pred -> lili
+Pred -> linja
+Pred -> lipu
+Pred -> luka
+Pred -> lupa
+Pred -> ma
+Pred -> mama
+Pred -> mani
+Pred -> meli
+Pred -> mije
+Pred -> moku
+Pred -> moli
+Pred -> monsi
+Pred -> mun
+Pred -> musi
+Pred -> mute
+Pred -> nanpa
+Pred -> nasin
+Pred -> nena
+Pred -> ni
+Pred -> nimi
+Pred -> noka
+Pred -> oko
+Pred -> olin
+Pred -> ona
+Pred -> pakala
+Pred -> pali
+Pred -> palisa
+Pred -> pana
+Pred -> pilin
+Pred -> pimeja
+Pred -> pini
+Pred -> pipi
+Pred -> poki
+Pred -> poka
+Pred -> pona
+Pred -> seli
+Pred -> selo
+Pred -> seme
+Pred -> sewi
+Pred -> sijelo
+Pred -> sike
+Pred -> sinpin
+Pred -> sitelen
+Pred -> sona
+Pred -> soweli
+Pred -> suli
+Pred -> suno
+Pred -> supa
+Pred -> suwi
+Pred -> tan
+Pred -> tawa
+Pred -> telo
+Pred -> tenpo
+Pred -> toki
+Pred -> tomo
+Pred -> tu
+Pred -> unpa
+Pred -> uta
+Pred -> utala
+Pred -> walo
+Pred -> wan
+Pred -> waso
+Pred -> wawa
+Pred -> weka
+Pred -> wile
+Pred -> ZZ0462Pred ZZ0463Pred
+Pred -> ZZ0464Pred ZZ0465Pred
+ZZ0469Pred -> ZZ0466Pred ZZ0467Pred
+Pred -> ZZ0469Pred ZZ0468Pred
+Pred -> ZZ0470Pred ZZ0471Pred
+Pred -> ZZ0472Pred ZZ0473Pred
+Pred -> N Modifier
+Pred -> N N
+ZZ0474Pred -> N N
+Pred -> ZZ0474Pred Modifier
+ZZ0476Pred -> NP ZZ0475Pred
+ZZ0477Pred -> ZZ0476Pred N
+Pred -> ZZ0477Pred Modifier
+ZZ0479Pred -> NP ZZ0478Pred
+Pred -> ZZ0479Pred Name
+ZZ0274Pred -> anu
+Pred -> ZZ0480Pred ZZ0481Pred
+Pred -> ZZ0482Pred ZZ0483Pred
+ZZ0487Pred -> ZZ0484Pred ZZ0485Pred
+Pred -> ZZ0487Pred ZZ0486Pred
+Pred -> ZZ0488Pred ZZ0489Pred
+Pred -> ZZ0490Pred ZZ0491Pred
+ZZ0276Pred -> jan
+ZZ0277Pred -> 'Name'
+ZZ0278Pred -> ma
+ZZ0279Pred -> 'Name'
+ZZ0280Pred -> ma
+ZZ0281Pred -> tomo
+ZZ0282Pred -> 'Name'
+ZZ0284Pred -> toki
+ZZ0285Pred -> 'Name'
+ZZ0286Pred -> soweli
+ZZ0287Pred -> 'Name'
+ZZ0289Pred -> pi
+ZZ0292Pred -> pi
+ZZ0294Pred -> jan
+ZZ0295Pred -> 'Name'
+ZZ0296Pred -> ma
+ZZ0297Pred -> 'Name'
+ZZ0298Pred -> ma
+ZZ0299Pred -> tomo
+ZZ0300Pred -> 'Name'
+ZZ0302Pred -> toki
+ZZ0303Pred -> 'Name'
+ZZ0304Pred -> soweli
+ZZ0305Pred -> 'Name'
+ZZ0306Pred -> ala
+Pred -> akesi
+Pred -> ala
+Pred -> ale
+Pred -> ali
+Pred -> ante
+Pred -> ijo
+Pred -> ike
+Pred -> ilo
+Pred -> insa
+Pred -> jaki
+Pred -> jan
+Pred -> jo
+Pred -> kala
+Pred -> kalama
+Pred -> kama
+Pred -> kasi
+Pred -> ken
+Pred -> kili
+Pred -> kiwen
+Pred -> kule
+Pred -> kute
+Pred -> kulupu
+Pred -> lawa
+Pred -> len
+Pred -> lete
+Pred -> lili
+Pred -> linja
+Pred -> lipu
+Pred -> luka
+Pred -> lupa
+Pred -> ma
+Pred -> mama
+Pred -> mani
+Pred -> meli
+Pred -> mije
+Pred -> moku
+Pred -> moli
+Pred -> monsi
+Pred -> mun
+Pred -> musi
+Pred -> mute
+Pred -> nanpa
+Pred -> nasin
+Pred -> nena
+Pred -> ni
+Pred -> nimi
+Pred -> noka
+Pred -> oko
+Pred -> olin
+Pred -> ona
+Pred -> pakala
+Pred -> pali
+Pred -> palisa
+Pred -> pana
+Pred -> pilin
+Pred -> pimeja
+Pred -> pini
+Pred -> pipi
+Pred -> poki
+Pred -> poka
+Pred -> pona
+Pred -> seli
+Pred -> selo
+Pred -> seme
+Pred -> sewi
+Pred -> sijelo
+Pred -> sike
+Pred -> sinpin
+Pred -> sitelen
+Pred -> sona
+Pred -> soweli
+Pred -> suli
+Pred -> suno
+Pred -> supa
+Pred -> suwi
+Pred -> tan
+Pred -> tawa
+Pred -> telo
+Pred -> tenpo
+Pred -> toki
+Pred -> tomo
+Pred -> tu
+Pred -> unpa
+Pred -> uta
+Pred -> utala
+Pred -> walo
+Pred -> wan
+Pred -> waso
+Pred -> wawa
+Pred -> weka
+Pred -> wile
+Pred -> ZZ0492Pred ZZ0493Pred
+Pred -> ZZ0494Pred ZZ0495Pred
+ZZ0499Pred -> ZZ0496Pred ZZ0497Pred
+Pred -> ZZ0499Pred ZZ0498Pred
+Pred -> ZZ0500Pred ZZ0501Pred
+Pred -> ZZ0502Pred ZZ0503Pred
+Pred -> ZZ0504Pred ZZ0505Pred
+Pred -> ZZ0506Pred ZZ0507Pred
+ZZ0511Pred -> ZZ0508Pred ZZ0509Pred
+Pred -> ZZ0511Pred ZZ0510Pred
+Pred -> ZZ0512Pred ZZ0513Pred
+Pred -> ZZ0514Pred ZZ0515Pred
+ZZ0308Pred -> jan
+ZZ0309Pred -> 'Name'
+ZZ0310Pred -> ma
+ZZ0311Pred -> 'Name'
+ZZ0312Pred -> ma
+ZZ0313Pred -> tomo
+ZZ0314Pred -> 'Name'
+ZZ0316Pred -> toki
+ZZ0317Pred -> 'Name'
+ZZ0318Pred -> soweli
+ZZ0319Pred -> 'Name'
+Pred -> N Modifier
+Pred -> N N
+ZZ0516Pred -> N N
+Pred -> ZZ0516Pred Modifier
+ZZ0518Pred -> NP ZZ0517Pred
+ZZ0519Pred -> ZZ0518Pred N
+Pred -> ZZ0519Pred Modifier
+ZZ0521Pred -> NP ZZ0520Pred
+Pred -> ZZ0521Pred Name
+ZZ0320Pred -> anu
+ZZ0323Pred -> pi
+ZZ0326Pred -> pi
+Pred -> ZZ0522Pred ZZ0523Pred
+Pred -> ZZ0524Pred ZZ0525Pred
+ZZ0529Pred -> ZZ0526Pred ZZ0527Pred
+Pred -> ZZ0529Pred ZZ0528Pred
+Pred -> ZZ0530Pred ZZ0531Pred
+Pred -> ZZ0532Pred ZZ0533Pred
+ZZ0328Pred -> jan
+ZZ0329Pred -> 'Name'
+ZZ0330Pred -> ma
+ZZ0331Pred -> 'Name'
+ZZ0332Pred -> ma
+ZZ0333Pred -> tomo
+ZZ0334Pred -> 'Name'
+ZZ0336Pred -> toki
+ZZ0337Pred -> 'Name'
+ZZ0338Pred -> soweli
+ZZ0339Pred -> 'Name'
+ZZ0341Pred -> pi
+ZZ0344Pred -> pi
+ZZ0346VP -> ala
+VP -> akesi
+VP -> ala
+VP -> ale
+VP -> ali
+VP -> ante
+VP -> ijo
+VP -> ike
+VP -> ilo
+VP -> insa
+VP -> jaki
+VP -> jan
+VP -> jo
+VP -> kala
+VP -> kalama
+VP -> kama
+VP -> kasi
+VP -> ken
+VP -> kili
+VP -> kiwen
+VP -> kule
+VP -> kute
+VP -> kulupu
+VP -> lawa
+VP -> len
+VP -> lete
+VP -> lili
+VP -> linja
+VP -> lipu
+VP -> luka
+VP -> lupa
+VP -> ma
+VP -> mama
+VP -> mani
+VP -> meli
+VP -> mije
+VP -> moku
+VP -> moli
+VP -> monsi
+VP -> mun
+VP -> musi
+VP -> mute
+VP -> nanpa
+VP -> nasin
+VP -> nena
+VP -> ni
+VP -> nimi
+VP -> noka
+VP -> oko
+VP -> olin
+VP -> ona
+VP -> pakala
+VP -> pali
+VP -> palisa
+VP -> pana
+VP -> pilin
+VP -> pimeja
+VP -> pini
+VP -> pipi
+VP -> poki
+VP -> poka
+VP -> pona
+VP -> seli
+VP -> selo
+VP -> seme
+VP -> sewi
+VP -> sijelo
+VP -> sike
+VP -> sinpin
+VP -> sitelen
+VP -> sona
+VP -> soweli
+VP -> suli
+VP -> suno
+VP -> supa
+VP -> suwi
+VP -> tan
+VP -> tawa
+VP -> telo
+VP -> tenpo
+VP -> toki
+VP -> tomo
+VP -> tu
+VP -> unpa
+VP -> uta
+VP -> utala
+VP -> walo
+VP -> wan
+VP -> waso
+VP -> wawa
+VP -> weka
+VP -> wile
+VP -> ZZ0534VP ZZ0535VP
+VP -> ZZ0536VP ZZ0537VP
+ZZ0541VP -> ZZ0538VP ZZ0539VP
+VP -> ZZ0541VP ZZ0540VP
+VP -> ZZ0542VP ZZ0543VP
+VP -> ZZ0544VP ZZ0545VP
+VP -> ZZ0546VP ZZ0547VP
+VP -> ZZ0548VP ZZ0549VP
+ZZ0553VP -> ZZ0550VP ZZ0551VP
+VP -> ZZ0553VP ZZ0552VP
+VP -> ZZ0554VP ZZ0555VP
+VP -> ZZ0556VP ZZ0557VP
+ZZ0348VP -> jan
+ZZ0349VP -> 'Name'
+ZZ0350VP -> ma
+ZZ0351VP -> 'Name'
+ZZ0352VP -> ma
+ZZ0353VP -> tomo
+ZZ0354VP -> 'Name'
+ZZ0356VP -> toki
+ZZ0357VP -> 'Name'
+ZZ0358VP -> soweli
+ZZ0359VP -> 'Name'
+VP -> N Modifier
+VP -> N N
+ZZ0558VP -> N N
+VP -> ZZ0558VP Modifier
+ZZ0560VP -> NP ZZ0559VP
+ZZ0561VP -> ZZ0560VP N
+VP -> ZZ0561VP Modifier
+ZZ0563VP -> NP ZZ0562VP
+VP -> ZZ0563VP Name
+ZZ0360VP -> anu
+ZZ0363VP -> pi
+ZZ0366VP -> pi
+VP -> ZZ0564VP ZZ0565VP
+VP -> ZZ0566VP ZZ0567VP
+ZZ0571VP -> ZZ0568VP ZZ0569VP
+VP -> ZZ0571VP ZZ0570VP
+VP -> ZZ0572VP ZZ0573VP
+VP -> ZZ0574VP ZZ0575VP
+ZZ0368VP -> jan
+ZZ0369VP -> 'Name'
+ZZ0370VP -> ma
+ZZ0371VP -> 'Name'
+ZZ0372VP -> ma
+ZZ0373VP -> tomo
+ZZ0374VP -> 'Name'
+ZZ0376VP -> toki
+ZZ0377VP -> 'Name'
+ZZ0378VP -> soweli
+ZZ0379VP -> 'Name'
+ZZ0381VP -> pi
+ZZ0384VP -> pi
+ZZ0386VP -> jan
+ZZ0387VP -> 'Name'
+ZZ0388VP -> ma
+ZZ0389VP -> 'Name'
+ZZ0390VP -> ma
+ZZ0391VP -> tomo
+ZZ0392VP -> 'Name'
+ZZ0394VP -> toki
+ZZ0395VP -> 'Name'
+ZZ0396VP -> soweli
+ZZ0397VP -> 'Name'
+IntransVP -> ZZ0576IntransVP ZZ0577IntransVP
+IntransVP -> ZZ0578IntransVP ZZ0579IntransVP
+ZZ0583IntransVP -> ZZ0580IntransVP ZZ0581IntransVP
+IntransVP -> ZZ0583IntransVP ZZ0582IntransVP
+IntransVP -> ZZ0584IntransVP ZZ0585IntransVP
+IntransVP -> ZZ0586IntransVP ZZ0587IntransVP
+ZZ0398IntransVP -> jan
+ZZ0399IntransVP -> 'Name'
+ZZ0400IntransVP -> ma
+ZZ0401IntransVP -> 'Name'
+ZZ0402IntransVP -> ma
+ZZ0403IntransVP -> tomo
+ZZ0404IntransVP -> 'Name'
+ZZ0406IntransVP -> toki
+ZZ0407IntransVP -> 'Name'
+ZZ0408IntransVP -> soweli
+ZZ0409IntransVP -> 'Name'
+ZZ0410IntransVP -> jan
+ZZ0411IntransVP -> 'Name'
+ZZ0412IntransVP -> ma
+ZZ0413IntransVP -> 'Name'
+ZZ0414IntransVP -> ma
+ZZ0415IntransVP -> tomo
+ZZ0416IntransVP -> 'Name'
+ZZ0418IntransVP -> toki
+ZZ0419IntransVP -> 'Name'
+ZZ0420IntransVP -> soweli
+ZZ0421IntransVP -> 'Name'
+ZZ0423IntransVP -> pi
+ZZ0426IntransVP -> pi
+ZZ0428IntransVP -> jan
+ZZ0429IntransVP -> 'Name'
+ZZ0430IntransVP -> ma
+ZZ0431IntransVP -> 'Name'
+ZZ0432IntransVP -> ma
+ZZ0433IntransVP -> tomo
+ZZ0434IntransVP -> 'Name'
+ZZ0436IntransVP -> toki
+ZZ0437IntransVP -> 'Name'
+ZZ0438IntransVP -> soweli
+ZZ0439IntransVP -> 'Name'
+ZZ0440Pred -> ala
+Pred -> akesi
+Pred -> ala
+Pred -> ale
+Pred -> ali
+Pred -> ante
+Pred -> ijo
+Pred -> ike
+Pred -> ilo
+Pred -> insa
+Pred -> jaki
+Pred -> jan
+Pred -> jo
+Pred -> kala
+Pred -> kalama
+Pred -> kama
+Pred -> kasi
+Pred -> ken
+Pred -> kili
+Pred -> kiwen
+Pred -> kule
+Pred -> kute
+Pred -> kulupu
+Pred -> lawa
+Pred -> len
+Pred -> lete
+Pred -> lili
+Pred -> linja
+Pred -> lipu
+Pred -> luka
+Pred -> lupa
+Pred -> ma
+Pred -> mama
+Pred -> mani
+Pred -> meli
+Pred -> mije
+Pred -> moku
+Pred -> moli
+Pred -> monsi
+Pred -> mun
+Pred -> musi
+Pred -> mute
+Pred -> nanpa
+Pred -> nasin
+Pred -> nena
+Pred -> ni
+Pred -> nimi
+Pred -> noka
+Pred -> oko
+Pred -> olin
+Pred -> ona
+Pred -> pakala
+Pred -> pali
+Pred -> palisa
+Pred -> pana
+Pred -> pilin
+Pred -> pimeja
+Pred -> pini
+Pred -> pipi
+Pred -> poki
+Pred -> poka
+Pred -> pona
+Pred -> seli
+Pred -> selo
+Pred -> seme
+Pred -> sewi
+Pred -> sijelo
+Pred -> sike
+Pred -> sinpin
+Pred -> sitelen
+Pred -> sona
+Pred -> soweli
+Pred -> suli
+Pred -> suno
+Pred -> supa
+Pred -> suwi
+Pred -> tan
+Pred -> tawa
+Pred -> telo
+Pred -> tenpo
+Pred -> toki
+Pred -> tomo
+Pred -> tu
+Pred -> unpa
+Pred -> uta
+Pred -> utala
+Pred -> walo
+Pred -> wan
+Pred -> waso
+Pred -> wawa
+Pred -> weka
+Pred -> wile
+Pred -> ZZ0588Pred ZZ0589Pred
+Pred -> ZZ0590Pred ZZ0591Pred
+ZZ0595Pred -> ZZ0592Pred ZZ0593Pred
+Pred -> ZZ0595Pred ZZ0594Pred
+Pred -> ZZ0596Pred ZZ0597Pred
+Pred -> ZZ0598Pred ZZ0599Pred
+Pred -> ZZ0600Pred ZZ0601Pred
+Pred -> ZZ0602Pred ZZ0603Pred
+ZZ0607Pred -> ZZ0604Pred ZZ0605Pred
+Pred -> ZZ0607Pred ZZ0606Pred
+Pred -> ZZ0608Pred ZZ0609Pred
+Pred -> ZZ0610Pred ZZ0611Pred
+ZZ0442Pred -> jan
+ZZ0443Pred -> 'Name'
+ZZ0444Pred -> ma
+ZZ0445Pred -> 'Name'
+ZZ0446Pred -> ma
+ZZ0447Pred -> tomo
+ZZ0448Pred -> 'Name'
+ZZ0450Pred -> toki
+ZZ0451Pred -> 'Name'
+ZZ0452Pred -> soweli
+ZZ0453Pred -> 'Name'
+Pred -> N Modifier
+Pred -> N N
+ZZ0612Pred -> N N
+Pred -> ZZ0612Pred Modifier
+ZZ0614Pred -> NP ZZ0613Pred
+ZZ0615Pred -> ZZ0614Pred N
+Pred -> ZZ0615Pred Modifier
+ZZ0617Pred -> NP ZZ0616Pred
+Pred -> ZZ0617Pred Name
+ZZ0454Pred -> anu
+ZZ0457Pred -> pi
+ZZ0460Pred -> pi
+Pred -> ZZ0618Pred ZZ0619Pred
+Pred -> ZZ0620Pred ZZ0621Pred
+ZZ0625Pred -> ZZ0622Pred ZZ0623Pred
+Pred -> ZZ0625Pred ZZ0624Pred
+Pred -> ZZ0626Pred ZZ0627Pred
+Pred -> ZZ0628Pred ZZ0629Pred
+ZZ0462Pred -> jan
+ZZ0463Pred -> 'Name'
+ZZ0464Pred -> ma
+ZZ0465Pred -> 'Name'
+ZZ0466Pred -> ma
+ZZ0467Pred -> tomo
+ZZ0468Pred -> 'Name'
+ZZ0470Pred -> toki
+ZZ0471Pred -> 'Name'
+ZZ0472Pred -> soweli
+ZZ0473Pred -> 'Name'
+ZZ0475Pred -> pi
+ZZ0478Pred -> pi
+ZZ0480Pred -> jan
+ZZ0481Pred -> 'Name'
+ZZ0482Pred -> ma
+ZZ0483Pred -> 'Name'
+ZZ0484Pred -> ma
+ZZ0485Pred -> tomo
+ZZ0486Pred -> 'Name'
+ZZ0488Pred -> toki
+ZZ0489Pred -> 'Name'
+ZZ0490Pred -> soweli
+ZZ0491Pred -> 'Name'
+Pred -> ZZ0630Pred ZZ0631Pred
+Pred -> ZZ0632Pred ZZ0633Pred
+ZZ0637Pred -> ZZ0634Pred ZZ0635Pred
+Pred -> ZZ0637Pred ZZ0636Pred
+Pred -> ZZ0638Pred ZZ0639Pred
+Pred -> ZZ0640Pred ZZ0641Pred
+ZZ0492Pred -> jan
+ZZ0493Pred -> 'Name'
+ZZ0494Pred -> ma
+ZZ0495Pred -> 'Name'
+ZZ0496Pred -> ma
+ZZ0497Pred -> tomo
+ZZ0498Pred -> 'Name'
+ZZ0500Pred -> toki
+ZZ0501Pred -> 'Name'
+ZZ0502Pred -> soweli
+ZZ0503Pred -> 'Name'
+ZZ0504Pred -> jan
+ZZ0505Pred -> 'Name'
+ZZ0506Pred -> ma
+ZZ0507Pred -> 'Name'
+ZZ0508Pred -> ma
+ZZ0509Pred -> tomo
+ZZ0510Pred -> 'Name'
+ZZ0512Pred -> toki
+ZZ0513Pred -> 'Name'
+ZZ0514Pred -> soweli
+ZZ0515Pred -> 'Name'
+ZZ0517Pred -> pi
+ZZ0520Pred -> pi
+ZZ0522Pred -> jan
+ZZ0523Pred -> 'Name'
+ZZ0524Pred -> ma
+ZZ0525Pred -> 'Name'
+ZZ0526Pred -> ma
+ZZ0527Pred -> tomo
+ZZ0528Pred -> 'Name'
+ZZ0530Pred -> toki
+ZZ0531Pred -> 'Name'
+ZZ0532Pred -> soweli
+ZZ0533Pred -> 'Name'
+VP -> ZZ0642VP ZZ0643VP
+VP -> ZZ0644VP ZZ0645VP
+ZZ0649VP -> ZZ0646VP ZZ0647VP
+VP -> ZZ0649VP ZZ0648VP
+VP -> ZZ0650VP ZZ0651VP
+VP -> ZZ0652VP ZZ0653VP
+ZZ0534VP -> jan
+ZZ0535VP -> 'Name'
+ZZ0536VP -> ma
+ZZ0537VP -> 'Name'
+ZZ0538VP -> ma
+ZZ0539VP -> tomo
+ZZ0540VP -> 'Name'
+ZZ0542VP -> toki
+ZZ0543VP -> 'Name'
+ZZ0544VP -> soweli
+ZZ0545VP -> 'Name'
+ZZ0546VP -> jan
+ZZ0547VP -> 'Name'
+ZZ0548VP -> ma
+ZZ0549VP -> 'Name'
+ZZ0550VP -> ma
+ZZ0551VP -> tomo
+ZZ0552VP -> 'Name'
+ZZ0554VP -> toki
+ZZ0555VP -> 'Name'
+ZZ0556VP -> soweli
+ZZ0557VP -> 'Name'
+ZZ0559VP -> pi
+ZZ0562VP -> pi
+ZZ0564VP -> jan
+ZZ0565VP -> 'Name'
+ZZ0566VP -> ma
+ZZ0567VP -> 'Name'
+ZZ0568VP -> ma
+ZZ0569VP -> tomo
+ZZ0570VP -> 'Name'
+ZZ0572VP -> toki
+ZZ0573VP -> 'Name'
+ZZ0574VP -> soweli
+ZZ0575VP -> 'Name'
+ZZ0576IntransVP -> jan
+ZZ0577IntransVP -> 'Name'
+ZZ0578IntransVP -> ma
+ZZ0579IntransVP -> 'Name'
+ZZ0580IntransVP -> ma
+ZZ0581IntransVP -> tomo
+ZZ0582IntransVP -> 'Name'
+ZZ0584IntransVP -> toki
+ZZ0585IntransVP -> 'Name'
+ZZ0586IntransVP -> soweli
+ZZ0587IntransVP -> 'Name'
+Pred -> ZZ0654Pred ZZ0655Pred
+Pred -> ZZ0656Pred ZZ0657Pred
+ZZ0661Pred -> ZZ0658Pred ZZ0659Pred
+Pred -> ZZ0661Pred ZZ0660Pred
+Pred -> ZZ0662Pred ZZ0663Pred
+Pred -> ZZ0664Pred ZZ0665Pred
+ZZ0588Pred -> jan
+ZZ0589Pred -> 'Name'
+ZZ0590Pred -> ma
+ZZ0591Pred -> 'Name'
+ZZ0592Pred -> ma
+ZZ0593Pred -> tomo
+ZZ0594Pred -> 'Name'
+ZZ0596Pred -> toki
+ZZ0597Pred -> 'Name'
+ZZ0598Pred -> soweli
+ZZ0599Pred -> 'Name'
+ZZ0600Pred -> jan
+ZZ0601Pred -> 'Name'
+ZZ0602Pred -> ma
+ZZ0603Pred -> 'Name'
+ZZ0604Pred -> ma
+ZZ0605Pred -> tomo
+ZZ0606Pred -> 'Name'
+ZZ0608Pred -> toki
+ZZ0609Pred -> 'Name'
+ZZ0610Pred -> soweli
+ZZ0611Pred -> 'Name'
+ZZ0613Pred -> pi
+ZZ0616Pred -> pi
+ZZ0618Pred -> jan
+ZZ0619Pred -> 'Name'
+ZZ0620Pred -> ma
+ZZ0621Pred -> 'Name'
+ZZ0622Pred -> ma
+ZZ0623Pred -> tomo
+ZZ0624Pred -> 'Name'
+ZZ0626Pred -> toki
+ZZ0627Pred -> 'Name'
+ZZ0628Pred -> soweli
+ZZ0629Pred -> 'Name'
+ZZ0630Pred -> jan
+ZZ0631Pred -> 'Name'
+ZZ0632Pred -> ma
+ZZ0633Pred -> 'Name'
+ZZ0634Pred -> ma
+ZZ0635Pred -> tomo
+ZZ0636Pred -> 'Name'
+ZZ0638Pred -> toki
+ZZ0639Pred -> 'Name'
+ZZ0640Pred -> soweli
+ZZ0641Pred -> 'Name'
+ZZ0642VP -> jan
+ZZ0643VP -> 'Name'
+ZZ0644VP -> ma
+ZZ0645VP -> 'Name'
+ZZ0646VP -> ma
+ZZ0647VP -> tomo
+ZZ0648VP -> 'Name'
+ZZ0650VP -> toki
+ZZ0651VP -> 'Name'
+ZZ0652VP -> soweli
+ZZ0653VP -> 'Name'
+ZZ0654Pred -> jan
+ZZ0655Pred -> 'Name'
+ZZ0656Pred -> ma
+ZZ0657Pred -> 'Name'
+ZZ0658Pred -> ma
+ZZ0659Pred -> tomo
+ZZ0660Pred -> 'Name'
+ZZ0662Pred -> toki
+ZZ0663Pred -> 'Name'
+ZZ0664Pred -> soweli
+ZZ0665Pred -> 'Name'

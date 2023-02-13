@@ -56,7 +56,7 @@ def main():
             
         sys.stdout = sys.__stdout__  # restore normal stdout
 
-
+#output is used in convert function
 def loadRules(filename):
     """
     Returns a list of rules read from the given file.  Each rule is itself 
@@ -113,6 +113,7 @@ def convert(rules):
     
     # second pass: processing
     for rule in rules:
+        #print(rule) #testing
         if len(rule) == 3:
             if re.match(TERM, rule[2]):
                 # nonterm -> term, which is fine
@@ -133,9 +134,10 @@ def convert(rules):
             # or else just many nonterms
             # first, get rid of all terms
             dummied = rule[0:2]  # up to -> of original,
+            #sys.__stdout__.write(str(rule) + '\n')  testing
             for token in rule[2:]:
                 if re.match(TERM, token):
-                    dummy = PREFIX + str(counter)
+                    dummy = PREFIX + str('{:0>4}'.format(counter)) + rule[0]
                     counter += 1
                     dummied.append(dummy)
                     rules.append([dummy, '->', token])
@@ -144,7 +146,7 @@ def convert(rules):
 
             #now go through dummied and trim down to two nonterms at a time
             while len(dummied) > 4:
-                dummy = PREFIX + str(counter)
+                dummy = PREFIX + str('{:0>4}'.format(counter)) + rule[0]
                 counter += 1
                 equiv = [dummy, '->'] + dummied[2:4]
                 cnf.append(equiv)

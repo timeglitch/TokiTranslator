@@ -50,4 +50,4 @@ Interjection -> a | a a | a a a | ala | ike | jaki | mu | o | pakala | pona | to
 Name -> jan 'Name' | ma 'Name' | ma tomo 'Name' | toki 'Name' | soweli 'Name' 
 
 
-# New words not included here: alasa, esun, pan, kipisi, pu
+# New words not included here: alasa, esun, kipisi, pu
