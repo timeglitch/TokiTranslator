@@ -65,11 +65,5 @@ while True:
     parsedEx = cky.parse(grammar, tpString)
 
     for parseTree in parsedEx:
-        try:
-
-            #print(parseTree)
-            out = simpleRecursiveText(parseTree)
-            print(out)
-        except Exception:
-            pass
+        print(parseTree)
     #break #temporarily break out automatically for testingj
